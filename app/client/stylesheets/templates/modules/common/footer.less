@@ -3,18 +3,11 @@
 // footer styles
 
 .footer.module {
-	position: relative;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: @full;
 	margin: 0 auto;
-	padding: @space-mini @space-base;
-	color: @gray;
-
-	.copyright {
-		margin: 0;
-		font-size: @font-size-small;
-		text-align: center;
-
-		@media (min-width: @tablet-width) {
-			font-size: @font-size-small + @font-size-micro;
-		}
-	}
+	padding: 0 @space-tiny;
+	background: @background-color;
 }
