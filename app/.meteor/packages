@@ -13,3 +13,4 @@ flemay:less-autoprefixer
 momentjs:moment
 msavin:mongol
 kadira:flow-router
+kadira:blaze-layout
