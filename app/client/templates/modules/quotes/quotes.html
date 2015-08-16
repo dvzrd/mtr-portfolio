@@ -1,0 +1,10 @@
+<template name="quotes">
+  <div class="quotes module">
+    {{#each quotes}}
+	    <blockquote class="quote">
+	      "{{quote}}"
+	      <p class="author">-{{author}}</p>
+	    </blockquote>
+		{{/each}}
+	</div>
+</template>

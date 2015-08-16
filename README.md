@@ -2,6 +2,7 @@
 
 A portfolio app for artists or photographers built with Meteor using Semantic-UI and Orion CMS
 
+* [Roadmap](#roadmap)
 * [How to use](#how-to-use)
   * [Requirements](#requirements)
   * [Installation](#installation)
@@ -9,7 +10,13 @@ A portfolio app for artists or photographers built with Meteor using Semantic-UI
 * [Structure](#structure)
   * [Packages used](#packages-used)
   * [Folder structure](#folder-structure)
+* [Attributions](#attributions)
 * [License](#license)
+
+## Roadmap
+
+* Add tests
+* Setup build environment
 
 ## How to use
 
@@ -24,8 +31,8 @@ curl https://install.meteor.com/ | sh
 ### Installation
 
 ```
-git clone git@github.com:withpulp/minimal-agency.git
-cd minimal-agency
+git clone git@github.com:amazingBastard/mtr-portfolio.git
+cd mtr-portfolio
 meteor
 ```
 
@@ -41,17 +48,19 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
 ### Packages used
 
 * Meteor Core
-  * [meteor-platform](https://github.com/meteor/meteor/tree/devel/packages/meteor-platform)
+  * [meteor-platform](http://github.com/meteor/meteor/tree/devel/packages/meteor-platform)
+* Accounts
 * Collections
- * [dburles:collection-helpers](https://github.com/dburles/meteor-collection-helpers/)
+  * [dburles:collection-helpers](http://github.com/dburles/meteor-collection-helpers/)
+* CMS
 * UI and UX
-  * [fastclick](https://github.com/meteor/meteor/tree/devel/packages/fastclick)
-  * [fortawesome:fontawesome](https://github.com/MeteorPackaging/Font-Awesome)
-  * [natestrauser:animate-css](https://github.com/nate-strauser/meteor-animate-css)
+  * [fastclick](http://github.com/meteor/meteor/tree/devel/packages/fastclick)
+  * [fortawesome:fontawesome](http://github.com/MeteorPackaging/Font-Awesome)
+  * [natestrauser:animate-css](http://github.com/nate-strauser/meteor-animate-css)
 * Development
-  * [lauricio:less-autoprefixer](https://github.com/Lauricio/less-autoprefixer)
-  * [momentjs:moment](https://github.com/moment/moment/)
-  * [msavin:mongol](https://github.com/msavin/Mongol)
+  * [flemay:less-autoprefixer](http://github.com/flemay/less-autoprefixer)
+  * [momentjs:moment](http://github.com/moment/moment/)
+  * [msavin:mongol](http://github.com/msavin/Mongol)
 
 The "insecure" and "autopublish" packages are removed by default (they make your app vulnerable).
 
@@ -69,11 +78,11 @@ app/                # Application folder
       layouts/            # Router layouts
       views/              # All the views
       modules/            # UI elements and components (i.e. forms, actions, etc...)
-       common/              # Common components (i.e. header, footer)
-       elements/            # Re-usable components
+        common/             # Common components (i.e. header, footer)
+        elements/           # Re-usable components
+  collections/        # Collection files, for each Meteor.Collection
   orion/              # Orion CMS files
-    dictionary/         # Orion dictionary definitions
-  models/             # Model files, for each Meteor.Collection
+  packages/           # Packages folder (custom meteor packages, npm)
   private/            # Private files
   public/             # Public files
   router/             # All routes
@@ -97,4 +106,5 @@ environments/       # Environments folder
 ```
 
 ## License
+
 This project has an MIT License, see the LICENSE.txt for more information.

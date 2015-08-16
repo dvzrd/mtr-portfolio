@@ -1,0 +1,38 @@
+@import '../../variables';
+
+// layout styles
+
+html {
+  width: @full;
+  height: @full;
+
+  body {
+    width: @full;
+    height: @full;
+    margin: 0;
+    padding: 0;
+    background-color: @background-color;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    .layout {
+      position: relative;
+			display: flex;
+			min-height: 100vh;
+		  flex-direction: column;
+			overflow: hidden;
+
+			.header {
+			  
+			}
+
+			.main {
+			  flex: 1;
+			}
+
+			.footer {
+
+			}
+    }
+	}
+}

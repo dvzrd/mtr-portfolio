@@ -1,0 +1,115 @@
+@import 'variables';
+
+// elements styles
+
+// buttons
+
+.button {
+  background-color: @gray-light;
+	color: @font-color;
+
+  &:hover,
+  &:focus {
+    background-color: @primary-color;
+		color: @light;
+  }
+
+  &.primary {
+    background-color: @primary-color;
+    color: @light;
+
+    &:hover,
+    &:focus {
+      background-color: @secondary-color;
+			color: @light;
+    }
+  }
+
+  &.secondary {
+    background-color: @secondary-color;
+    color: @light;
+
+    &:hover,
+    &:focus {
+      background-color: @primary-color;
+			color: @light;
+    }
+  }
+
+  &.fluid {
+    display: block;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &.rounded {
+    border-radius: @space-tiny;
+  }
+}
+
+// lists
+
+.list {
+	list-style-type: square;
+
+  &.unstyled {
+    padding: 0;
+	  list-style-type: none;
+  }
+
+	&.inline {
+		display: inline;
+		padding: 0;
+		list-style-type: none;
+
+		.item {
+			display: inline;
+		}
+	}
+
+  @media (min-width: @desktop-width) {
+    text-indent: @space-large;
+  }
+}
+
+// images
+
+.image {
+  display: block;
+  margin: @space-base auto;
+
+  &.fluid {
+    width: @full;
+  }
+
+	&.background {
+		position: absolute;
+		margin: 0;
+		z-index: -1;
+
+		&.top {
+			top: 0;
+		}
+
+		&.right {
+			right: 0;
+		}
+
+		&.bottom {
+			bottom: 0;
+		}
+
+		&.left {
+			left: 0;
+		}
+	}
+}
+
+// other
+
+hr {
+	margin: 0;
+	border: 0;
+	border-bottom: @space-atomic solid @divider-color;
+}

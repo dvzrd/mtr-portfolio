@@ -1,0 +1,35 @@
+@import '../../../variables';
+
+// header styles
+
+.header.module {
+	padding: @space-base;
+	background: @secondary-color;
+
+	.title {
+		margin: 0;
+		text-align: center;
+
+		@media (min-width: @tablet-width) {
+			text-align: left;
+		}
+
+		&.sub {
+			display: block;
+
+			@media (min-width: @tablet-width) {
+				display: inline-block;
+			}
+		}
+
+		.logo {
+			display: block;
+			margin: auto;
+
+			@media (min-width: @tablet-width) {
+				display: inline-block;
+				margin-right: @space-base;
+			}
+		}
+	}
+}
