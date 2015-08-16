@@ -57,7 +57,7 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [kadira:flow-router](https://github.com/kadirahq/flow-router)
 * UI and UX
   * [fastclick](http://github.com/meteor/meteor/tree/devel/packages/fastclick)
-  * [fortawesome:fontawesome](http://github.com/MeteorPackaging/Font-Awesome)
+  * [semantic:ui-css](https://github.com/Semantic-Org/Semantic-UI-CSS)
   * [natestrauser:animate-css](http://github.com/nate-strauser/meteor-animate-css)
 * Development
   * [flemay:less-autoprefixer](http://github.com/flemay/less-autoprefixer)

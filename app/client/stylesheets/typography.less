@@ -52,16 +52,16 @@ html {
 
       &:hover,
       &:focus {
-        color: @secondary-color;
+        color: darken(@link-color, @quarter);
         text-decoration: underline;
       }
 
       &:visited {
-        color: darken(@secondary-color, @quarter);
+        color: darken(@link-color, @half);
       }
 
       &:active {
-        color: @highlight-color;
+        color: @offset-color;
         text-decoration: underline;
       }
     }

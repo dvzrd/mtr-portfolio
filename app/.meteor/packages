@@ -5,7 +5,6 @@
 
 meteor-platform
 
-fortawesome:fontawesome
 dburles:collection-helpers
 fastclick
 natestrauser:animate-css
@@ -14,3 +13,4 @@ momentjs:moment
 msavin:mongol
 kadira:flow-router
 kadira:blaze-layout
+semantic:ui-css
