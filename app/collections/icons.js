@@ -7,6 +7,10 @@ Icons = new orion.collection('icons', {
   },
   tabular: {
     columns: [
+      {
+        data: 'order',
+        title: 'Order'
+      },
 		  {
 			  data: 'social',
 			  title: 'Social Media'
@@ -24,6 +28,10 @@ Icons = new orion.collection('icons', {
 });
 
 Icons.attachSchema(new SimpleSchema({
+  order: {
+    type: Number,
+    label: 'Order'
+  },
   social: {
     type: String,
     label: 'Social Media'

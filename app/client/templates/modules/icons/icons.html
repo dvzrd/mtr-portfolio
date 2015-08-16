@@ -1,16 +1,9 @@
 <template name="icons">
   <nav class="icons module">
-	  <a class="ui circular icon button" href="#" target="_block">
-	    <i class="facebook icon"></i>
-	  </a>
-		<a class="ui circular icon button" href="#" target="_block">
-	    <i class="twitter icon"></i>
-	  </a>
-		<a class="ui circular icon button" href="#" target="_block">
-	    <i class="linkedin icon"></i>
-	  </a>
-		<a class="ui circular icon button" href="#" target="_block">
-	    <i class="google plus icon"></i>
-	  </a>
+    {{#each icons}}
+	    <a class="ui circular icon button" href="{{url}}" target="_block">
+	      <i class="{{icon}}"></i>
+	    </a>
+    {{/each}}
 	</nav>
 </template>
