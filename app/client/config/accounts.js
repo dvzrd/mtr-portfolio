@@ -30,8 +30,11 @@ AccountsTemplates.configure({
 			signIn: 'Login'
 		},
 		title: {
-			signIn: 'Admin Entry'
-		},
+			signIn: 'Admin Entry',
+			changePwd: '',
+			resetPwd: '',
+			verifyEmail: ''
+		}
 	}
 });
 
