@@ -1,7 +1,7 @@
 AccountsTemplates.configure({
 	// Behaviour
-	confirmPassword: false,
-	enablePasswordChange: false,
+	confirmPassword: true,
+	enablePasswordChange: true,
 	forbidClientAccountCreation: true,
 	overrideLoginErrors: true,
 	sendVerificationEmail: false,
@@ -14,7 +14,7 @@ AccountsTemplates.configure({
 
 	// Client-side Validation
 	continuousValidation: true,
-	negativeFeedback: false,
+	negativeFeedback: true,
 	negativeValidation: true,
 	positiveValidation: true,
 	positiveFeedback: true,
