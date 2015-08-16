@@ -22,7 +22,7 @@ dburles:collection-helpers@1.0.3
 dburles:mongo-collection-instances@0.3.4
 ddp@1.1.0
 deps@1.0.7
-dvz:orion-semantic-ui@0.2.1
+dvz:orion-semantic-ui@0.2.2
 ejson@1.0.6
 email@1.0.6
 fabienb4:autoform-semantic-ui@0.4.6
