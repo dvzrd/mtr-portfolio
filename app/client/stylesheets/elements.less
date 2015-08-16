@@ -4,24 +4,24 @@
 
 // buttons
 
-.button {
-  background-color: @gray-light;
-	color: @font-color;
+.ui.button {
+  background-color: @offset-color;
+	color: @light;
 
   &:hover,
   &:focus {
     background-color: @primary-color;
-		color: @light;
+		color: @secondary-color;
   }
 
   &.primary {
     background-color: @primary-color;
-    color: @light;
+    color: @secondary-color;
 
     &:hover,
     &:focus {
       background-color: @secondary-color;
-			color: @light;
+			color: @primary-color;
     }
   }
 
@@ -50,7 +50,7 @@
 
 // lists
 
-.list {
+.ui.list {
 	list-style-type: square;
 
   &.unstyled {
@@ -75,7 +75,7 @@
 
 // images
 
-.image {
+.ui.image {
   display: block;
   margin: @space-base auto;
 
