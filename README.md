@@ -50,8 +50,8 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
 * Meteor Core
   * [meteor-platform](http://github.com/meteor/meteor/tree/devel/packages/meteor-platform)
 * Accounts
-  * [accounts-password]()
-  * [useraccounts:semantic-ui]()
+  * [accounts-password](https://github.com/meteor/meteor/tree/devel/packages/accounts-password)
+  * [useraccounts:semantic-ui](https://github.com/meteor-useraccounts/semantic-ui/)
 * Collections
   * [dburles:collection-helpers](http://github.com/dburles/meteor-collection-helpers/)
 * CMS
