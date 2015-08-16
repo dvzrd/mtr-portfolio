@@ -19,3 +19,6 @@ tomwasd:flow-router-seo
 meteorhacks:fast-render
 accounts-password
 useraccounts:semantic-ui
+orionjs:core
+orionjs:froala
+dvz:orion-semantic-ui
