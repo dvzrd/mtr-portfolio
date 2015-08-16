@@ -20,17 +20,23 @@ html {
 			overflow: hidden;
 
 			.header {
-
+        position: relative;
+        margin: 0;
 			}
 
 			.main {
         display: flex;
   			min-height: 100vh;
   		  flex-direction: column;
+        background-color: @secondary-color;
+        color: @neutral-color;
 			}
 
 			.footer {
-
+        position: fixed;
+      	bottom: 0;
+      	left: 0;
+      	width: @full;
 			}
     }
 	}

@@ -57,6 +57,7 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
 * CMS
 * Routing
   * [kadira:flow-router](https://github.com/kadirahq/flow-router)
+  * [meteorhacks:fast-render](https://github.com/meteorhacks/fast-render)
 * SEO
   * [spiderable](http://github.com/meteor/meteor/tree/devel/packages/spiderable)
   * [tomwasd:flow-router-seo](https://github.com/tomwasd/flow-router-seo)
