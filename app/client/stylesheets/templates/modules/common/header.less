@@ -3,6 +3,25 @@
 // header styles
 
 .header.module {
+	display: inline-block;
+	width: @full;
 	padding: @space-base;
 	background: @background-color;
+
+	.ui.header {
+		display: inline-block;
+		margin: 0;
+		font-size: @font-size-base + @font-size-tiny;
+		font-weight: 100;
+		text-transform: uppercase;
+    letter-spacing: @space-tiny;
+
+		.ui.image {
+			margin: 0;
+		}
+	}
+
+	.social.module {
+		float: right;
+	}
 }
