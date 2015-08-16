@@ -9,12 +9,21 @@
 	background: @background-color;
 	text-align: center;
 
+	@media (min-width: @tablet-width) {
+		padding: @space-small;
+		text-align: left;
+	}
+
 	.ui.header {
 		margin: 0;
 		font-size: @font-size-base;
 		font-weight: 100;
 		text-transform: uppercase;
     letter-spacing: @space-tiny;
+
+		@media (min-width: @tablet-width) {
+			display: inline-block;
+		}
 
 		.ui.image {
 			margin: 0;
@@ -23,5 +32,10 @@
 
 	.social.module {
 		float: right;
+
+		@media (min-width: @tablet-width) {
+			display: inline-block;
+			width: auto;
+		}
 	}
 }

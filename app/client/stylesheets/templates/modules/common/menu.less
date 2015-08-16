@@ -2,6 +2,28 @@
 
 // menu styles
 
-.ui.menu.module {
+.menu.module {
   margin: 0;
+  text-align: center;
+
+  .ui.basic.button {
+    margin: 0;
+    padding: @space-base @space-tiny;
+    box-shadow: none;
+    color: @font-color !important;
+    font-size: @space-small;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: @space-micro;
+
+    &:hover,
+    &:focus {
+      color: @link-color !important;
+    }
+
+    &:active,
+    &.active {
+      color: @link-color !important;
+    }
+  }
 }
