@@ -1,5 +1,8 @@
 <template name="projects">
   <div class="projects module">
-	  project
+	  {{#each projects}}
+      <h1>{{title}}</h1>
+      <img src="{{thumb}}" />
+    {{/each}}
 	</div>
 </template>
