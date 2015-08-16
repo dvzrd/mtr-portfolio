@@ -19,10 +19,16 @@
 		font-size: @font-size-base;
 		font-weight: 100;
 		text-transform: uppercase;
+		text-decoration: none;
     letter-spacing: @space-tiny;
 
 		@media (min-width: @tablet-width) {
 			display: inline-block;
+		}
+
+		&:hover,
+		&:focus {
+			color: @highlight-color;
 		}
 
 		.ui.image {

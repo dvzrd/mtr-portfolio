@@ -9,6 +9,7 @@
   .ui.basic.button {
     margin: 0;
     padding: @space-base @space-tiny;
+    border-radius: 0;
     box-shadow: none;
     color: @font-color !important;
     font-size: @space-small;
@@ -23,6 +24,8 @@
 
     &:active,
     &.active {
+      box-shadow: 0 @space-mini 0 0 @highlight-color inset;
+      background-color: transparent !important;
       color: @highlight-color !important;
     }
   }
