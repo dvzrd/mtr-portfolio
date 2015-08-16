@@ -53,6 +53,8 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
 * Collections
   * [dburles:collection-helpers](http://github.com/dburles/meteor-collection-helpers/)
 * CMS
+* Router
+  * [kadira:flow-router](https://github.com/kadirahq/flow-router)
 * UI and UX
   * [fastclick](http://github.com/meteor/meteor/tree/devel/packages/fastclick)
   * [fortawesome:fontawesome](http://github.com/MeteorPackaging/Font-Awesome)
