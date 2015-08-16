@@ -56,6 +56,7 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [dburles:collection-helpers](http://github.com/dburles/meteor-collection-helpers/)
 * CMS
   * [orionjs:core](https://github.com/orionjs/orion)
+  * [orionjs:pages](https://github.com/orionjs/orion)
   * [orionjs:froala](https://github.com/orionjs/orion)
   * [dvz:orion-semantic-ui](https://github.com/amazingBastard/orion-semantic-ui)
 * Routing

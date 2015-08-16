@@ -1,17 +1,13 @@
 <template name="menu">
   <nav class="menu module">
-	  <a class="ui basic button" href="/">
-		  Work
-	  </a>
-    <a class="ui basic button" href="#">
-		  About
-	  </a>
-	  <a class="ui basic button" href="#">
-		  Blog
-	  </a>
-    <a class="ui basic button" href="#">
-		  Contact
-	  </a>
+    <a class="ui basic button" href="/">
+      Work
+    </a>
+    {{#each pages}}
+	    <a class="ui basic button" href="{{path}}">
+		    {{title}}
+	    </a>
+    {{/each}}
     {{#if currentUser}}
       <a class="ui primary admin button" href="/admin">
         Admin

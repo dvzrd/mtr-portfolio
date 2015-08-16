@@ -78,6 +78,7 @@ orionjs:dictionary@1.4.0
 orionjs:filesystem@1.4.0
 orionjs:froala@1.4.0
 orionjs:lang-en@1.4.0
+orionjs:pages@1.4.0
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5
