@@ -1,5 +1,7 @@
 <template name="header">
   <div class="header module">
-	  header
+	  {{#if currentUser}}
+      admin
+    {{/if}}
 	</div>
 </template>
