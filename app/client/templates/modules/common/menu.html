@@ -1,17 +1,10 @@
 <template name="menu">
   <nav class="menu module">
-    <a class="ui basic button" href="/">
-      Work
-    </a>
-    {{#each pages}}
-	    <a class="ui basic button" href="{{path}}">
-		    {{title}}
-	    </a>
-    {{/each}}
+    {{> views}}
     {{#if currentUser}}
-      <a class="ui primary admin button" href="/admin">
-        Admin
-      </a>
+  	  <a class="ui primary admin button" href="/admin">
+  		  Admin
+  	  </a>
     {{/if}}
 	</nav>
 </template>

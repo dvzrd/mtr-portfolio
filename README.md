@@ -56,7 +56,6 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [dburles:collection-helpers](http://github.com/dburles/meteor-collection-helpers/)
 * CMS
   * [orionjs:core](https://github.com/orionjs/orion)
-  * [orionjs:pages](https://github.com/orionjs/orion)
   * [orionjs:froala](https://github.com/orionjs/orion)
   * [dvz:orion-semantic-ui](https://github.com/amazingBastard/orion-semantic-ui)
 * Routing
@@ -92,8 +91,9 @@ app/                # Application folder
       modules/            # UI elements and components (i.e. forms, actions, etc...)
         common/             # Common components (i.e. header, footer)
         elements/           # Re-usable components
-  collections/        # Collection files, for each Meteor.Collection
   orion/              # Orion CMS files
+    collections/        # Collection files, for each orion.Collection
+    dictionary/         # Orion dictionary
   packages/           # Packages folder (custom meteor packages, npm)
   private/            # Private files
   public/             # Public files
