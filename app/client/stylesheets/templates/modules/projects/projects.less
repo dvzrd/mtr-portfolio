@@ -1,0 +1,47 @@
+@import '../../../variables';
+
+// projects styles
+
+.projects.module {
+	width: @full;
+	margin: 0;
+
+	.ui.card {
+		width: @full;
+		margin: 0;
+		border-radius: 0;
+
+		@media (min-width: @phone-width) and (max-width: @tablet-width) {
+			width: @half;
+		}
+
+		@media (min-width: @tablet-width) {
+			width: @third;
+		}
+
+		@media (min-width: @large-desktop-width) {
+			width: @quarter;
+		}
+
+		@media (min-width: @huge-desktop-width) {
+			width: @sixth;
+		}
+
+		@media (min-width: @jumbo-desktop-width) {
+			width: @eighth;
+		}
+
+		@media (min-width: @giant-desktop-width) {
+			width: @sixth;
+		}
+
+		@media (min-width: @massive-desktop-width) {
+			width: @quarter;
+		}
+
+		.image {
+			margin: 0;
+			border-radius: 0 !important;
+		}
+	}
+}

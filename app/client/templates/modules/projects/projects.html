@@ -1,8 +1,11 @@
 <template name="projects">
-  <div class="projects module">
+  <div class="ui projects cards module">
 	  {{#each projects}}
-      <h1>{{title}}</h1>
-      <img src="{{thumb}}" />
+      <div class="ui card">
+        <a class="image" href="#">
+          <img class="fluid image" src="{{thumb}}" />
+        </a>
+      </div>
     {{/each}}
 	</div>
 </template>

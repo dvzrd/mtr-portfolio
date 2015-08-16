@@ -1,5 +1,9 @@
 Template.projects.onRendered(function() {
 	Meteor.subscribe('projects');
+
+	$('.special.cards .image').dimmer({
+		on: 'hover'
+	});
 });
 
 Template.projects.helpers({
