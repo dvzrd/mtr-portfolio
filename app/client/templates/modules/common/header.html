@@ -1,8 +1,8 @@
 <template name="header">
   <div class="header module">
 	  <a class="ui header" href="/">
-      <img src="/images/brand/logo.png" class="ui circular image">
-      Meteor Portfolio
+      <img src="{{ dict 'header.logo' '/images/brand/logo.png' }}" class="ui circular image">
+      {{ dict 'header.title' 'Meteor Portfolio' }}
     </a>
     {{> social}}
 	</div>
