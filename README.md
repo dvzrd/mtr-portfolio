@@ -2,6 +2,10 @@
 
 A portfolio app for artists or photographers built with Meteor using Semantic-UI and Orion CMS
 
+[DEMO](http://artfolio.meteor.com)
+
+> You can use username: admin // password: admin to login to /admin
+
 * [Roadmap](#roadmap)
 * [How to use](#how-to-use)
   * [Requirements](#requirements)
