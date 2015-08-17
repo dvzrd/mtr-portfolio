@@ -7,6 +7,16 @@ FlowRouter.route('/', {
   }
 });
 
+FlowRouter.route('/:projectId', {
+  name: 'project',
+  action: function(params) {
+    console.log("This is my project:", params.projectId);
+    BlazeLayout.render('layout', {
+      content: 'project'
+    });
+  }
+});
+
 FlowRouter.route('/about', {
   name: 'about',
   action: function() {

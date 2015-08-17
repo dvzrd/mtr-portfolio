@@ -2,7 +2,7 @@
   <div class="ui projects cards module">
 	  {{#each projects}}
       <div class="ui card">
-        <a class="image" href="#">
+        <a class="image" href="{{pathFor '/:id' id=_id}}">
           <img class="fluid image" src="{{thumb}}" />
         </a>
       </div>
