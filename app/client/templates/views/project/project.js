@@ -5,3 +5,11 @@ Template.project.onCreated(function() {
     self.subscribe('project', projectId);
   });
 });
+
+Template.project.helpers({
+  project: function() {
+    var projectId = FlowRouter.getParam('projectId');
+    var project = Projects.findOne({_id: projectId}) || {};
+    return project;
+  }
+});

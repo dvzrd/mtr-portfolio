@@ -1,11 +1,15 @@
 <template name="projects">
   <div class="ui projects cards module">
-	  {{#each projects}}
-      <div class="ui card">
-        <a class="image" href="{{pathFor '/:id' id=_id}}">
-          <img class="fluid image" src="{{thumb}}" />
-        </a>
-      </div>
-    {{/each}}
+    {{#if Template.subscriptionsReady}}
+	    {{#each projects}}
+        <div class="ui card">
+          <a class="image" href="{{pathFor '/:id' id=_id}}">
+            <img class="fluid image" src="{{thumb}}" />
+          </a>
+        </div>
+      {{/each}}
+    {{else}}
+      <p>loading...</p>
+    {{/if}}
 	</div>
 </template>

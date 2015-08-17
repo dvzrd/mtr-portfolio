@@ -1,5 +1,12 @@
 <template name="project">
   <div class="project view">
-    <p>project view</p>
+    {{#if Template.subscriptionsReady}}
+      {{#with project}}
+        <p>{{title}}</p>
+        <p>{{thumb}}</p>
+      {{/with}}
+    {{else}}
+      <p>Loading...</p>
+    {{/if}}
   </div>
 </template>
