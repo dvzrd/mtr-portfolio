@@ -1,5 +1,8 @@
-Template.projects.onRendered(function() {
-	Meteor.subscribe('projects');
+Template.projects.onCreated(function() {
+	var self = this;
+  self.autorun(function() {
+    self.subscribe('projects');
+  });
 });
 
 Template.projects.helpers({

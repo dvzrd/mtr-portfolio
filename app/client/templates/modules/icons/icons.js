@@ -1,5 +1,8 @@
-Template.icons.onRendered(function() {
-	Meteor.subscribe('icons');
+Template.icons.onCreated(function() {
+	var self = this;
+  self.autorun(function() {
+    self.subscribe('icons');
+  });
 });
 
 Template.icons.helpers({
