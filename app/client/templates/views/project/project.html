@@ -4,6 +4,10 @@
       {{#with project}}
         <p>{{title}}</p>
         <p>{{thumb}}</p>
+        {{#each album}}
+          <img src="{{image}}" />
+          <p>{{title}}</p>
+        {{/each}}
       {{/with}}
       {{> projects}}
     {{else}}
