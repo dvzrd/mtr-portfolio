@@ -102,6 +102,7 @@ underscore@1.0.3
 url@1.0.4
 useraccounts:core@1.12.1
 useraccounts:semantic-ui@1.12.1
+waitingkuo:headroomjs@0.0.1
 webapp@1.2.0
 webapp-hashing@1.0.3
 zimme:active-route@2.3.0

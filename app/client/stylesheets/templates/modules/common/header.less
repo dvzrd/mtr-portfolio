@@ -6,9 +6,7 @@
 	display: inline-block;
 	width: @full;
 	padding: @space-small 0;
-	background: @background-color;
 	text-align: center;
-	z-index: 1;
 
 	@media (min-width: @tablet-width) {
 		padding: @space-small;
@@ -16,6 +14,8 @@
 	}
 
 	.ui.header {
+		position: relative;
+		width: auto;
 		margin: 0;
 		font-size: @font-size-base;
 		font-weight: 100;
