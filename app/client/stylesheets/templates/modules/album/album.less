@@ -41,6 +41,18 @@
     cursor: pointer;
     background-color: @secondary-color;
 
+    @media (min-width: @desktop-width) {
+      margin-bottom: @space-large;
+    }
+
+    @media (min-width: @large-desktop-width) {
+      margin-bottom: @space-huge;
+    }
+
+    @media (min-width: @huge-desktop-width) {
+      margin-bottom: @space-jumbo;
+    }
+
     .image {
       margin: 0;
       transition: all @faster;
