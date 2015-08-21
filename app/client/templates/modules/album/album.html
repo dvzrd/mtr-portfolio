@@ -1,13 +1,13 @@
 <template name="album">
-<div class="album module">
-                    {{#each album}}
-                        <div class="album item">
-                            <img class="ui fluid image" src="{{image}}"/>
+    <div class="album module">
+        {{#each album}}
+            <div class="album item">
+                <img class="ui fluid image" src="{{image}}"/>
 
-                            <div class="title">
-                                {{title}}
-                            </div>
-                        </div>
-                    {{/each}}
+                <div class="title">
+                    {{title}}
                 </div>
-                </template>
+            </div>
+        {{/each}}
+    </div>
+</template>
