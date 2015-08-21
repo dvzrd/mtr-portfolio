@@ -5,7 +5,7 @@
 .projects.module {
   width: @full;
   margin: 0;
-  background-color: @neutral-color;
+  background-color: transparent;
   z-index: 1;
 
   .ui.card {
@@ -14,7 +14,7 @@
     overflow: hidden;
     box-shadow: 0 0 @space-atomic @space-quantum @neutral-color;
     border-radius: 0;
-    background-color: @neutral-color;
+    background-color: @primary-color;
 
     @media (min-width: @phone-width) and (max-width: @tablet-width) {
       width: @half;
@@ -62,12 +62,12 @@
       width: @full;
       height: @full;
       padding: @space-large;
-      color: darken(@highlight-color, @sixth);
-      font-weight: 300;
+      color: @dark;
+      font-weight: normal;
       letter-spacing: @space-mini;
       text-align: center;
       text-transform: uppercase;
-      text-shadow: @space-quantum @space-quantum @space-quantum @secondary-color;
+      text-shadow: @space-quantum @space-quantum @space-quantum @light;
       backface-visibility: hidden;
       opacity: 0;
       transition: all @faster;
@@ -79,7 +79,7 @@
 
       .image {
         box-shadow: 0 0 @space-tiny 0 @secondary-color inset;
-        opacity: 0.75;
+        opacity: 0.5;
         transform: scale(1);
       }
 

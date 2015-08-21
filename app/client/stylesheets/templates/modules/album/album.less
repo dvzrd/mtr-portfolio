@@ -3,9 +3,113 @@
 // album styles
 
 .album.module {
-  margin: 0 @space-base;
+  margin: @space-base @space-base @space-giant;
 
   @media (min-width: @desktop-width) {
-    margin: 0 @space-base @space-massive @quarter + 5%;
+    margin: @space-base @space-base @space-giant @quarter + 5%;
+  }
+
+  .album.item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: @space-base;
+    cursor: pointer;
+    background-color: @secondary-color;
+
+    .image {
+      margin: 0;
+      transition: all @faster;
+      opacity: 1;
+    }
+
+    .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: @full;
+      height: @full;
+      backface-visibility: hidden;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: @full + @full;
+        height: @full + @full;
+        border-style: solid;
+        border-color: @secondary-color;
+        content: '';
+        transition: transform @faster;
+        border-width: @space-jumbo 0 0 @space-jumbo;
+        transform: translate3d(-@space-jumbo, -@space-jumbo, 0);
+      }
+
+      .ui.header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: @space-base;
+        width: @full;
+        color: @light;
+        opacity: 0;
+        transition: all @faster;
+        transform: translate3d(@full,0,0);
+      }
+
+      .ui.vertical.buttons {
+        position: absolute;
+        top: @space-jumbo;
+        left: 0;
+        width: @space-jumbo;
+        border: 0;
+        opacity: 0;
+        transition: all @faster;
+        transform: translate3d(-@space-jumbo, 0, 0);
+
+        .ui.icon.button {
+          padding: 1rem;
+          box-shadow: none;
+          color: @light !important;
+          font-size: @space-base + @space-tiny;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+
+      .image {
+        opacity: 0.75;
+      }
+
+      .info {
+        box-shadow: inset 0 0 0 @space-base @secondary-color;
+
+        &:before {
+          transform: translate3d(0,0,0);
+        }
+
+        .ui.header {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+
+        .ui.vertical.buttons {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+
+          .ui.icon.button {
+            border-radius: 0;
+
+            &:hover,
+            &:focus {
+              background-color: @primary-color !important;
+              color: @secondary-color !important;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -2,10 +2,20 @@
     <div class="album module">
         {{#each album}}
             <div class="album item">
-                <img class="ui fluid image" src="{{image}}"/>
-
-                <div class="title">
-                    {{title}}
+                <img class="ui fluid image" src="{{image}}" />
+                <div class="info">
+                    <h2 class="ui header">{{title}}</h2>
+                    <div class="ui vertical basic buttons">
+                        <button class="ui icon button">
+                            <i class="facebook icon"></i>
+                        </button>
+                        <button class="ui icon button">
+                            <i class="twitter icon"></i>
+                        </button>
+                        <button class="ui icon button">
+                            <i class="google plus icon"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         {{/each}}
