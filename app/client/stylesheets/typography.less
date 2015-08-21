@@ -79,14 +79,19 @@ html {
       margin: 0;
       margin-bottom: @space-base;
       color: @header-color;
-      font-size: inherit;
       font-family: @font-family-header;
+      font-size: inherit;
+      font-weight: 100;
+      letter-spacing: @space-micro;
+      text-transform: uppercase;
 
       &.ui.header {
-        text-transform: uppercase;
+        font-family: @font-family-header;
+        font-size: inherit;
         font-weight: 100;
         line-height: @line-height-base;
         letter-spacing: @space-mini;
+        text-transform: uppercase;
       }
 
       small {
