@@ -6,6 +6,9 @@
                     <a class="image" href="{{pathFor '/blog/:id' id=_id}}">
                         <img class="fluid image" src="{{thumb}}" />
                         <h2 class="title">{{title}}</h2>
+                        <div class="description">
+                            {{description}}
+                        </div>
                     </a>
                 </div>
             {{/each}}
