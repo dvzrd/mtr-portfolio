@@ -4,24 +4,14 @@
             {{#with project}}
                 <div class="ui left rail">
                     <div class="ui fixed sticky">
-                        <h1 class="ui header">{{title}}</h1>
+                        <h2 class="ui header">{{title}}</h2>
                         <div class="description">
                             {{{description}}}
                         </div>
                         {{> copyright}}
                     </div>
                 </div>
-                <div class="ui album module">
-                    {{#each album}}
-                        <div class="album item">
-                            <img class="ui fluid image" src="{{image}}"/>
-
-                            <div class="title">
-                                {{title}}
-                            </div>
-                        </div>
-                    {{/each}}
-                </div>
+                {{> album}}
             {{/with}}
             {{> projects}}
         {{else}}

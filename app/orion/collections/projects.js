@@ -31,7 +31,7 @@ Projects.attachSchema(new SimpleSchema({
     },
     description: orion.attribute('froala', {
         label: 'Description'
-    })
+    }),
     album: {
         type: [Object],
         minCount: 1,
