@@ -29,22 +29,13 @@ Posts.attachSchema(new SimpleSchema({
         type: String,
         label: 'Thumbnail'
     },
-    description: orion.attribute('froala', {
+    description: {
+        type: String,
         label: 'Description'
+    },
+    content: orion.attribute('froala', {
+        label: 'Content'
     }),
-    album: {
-        type: [Object],
-        minCount: 1,
-        maxCount: 50
-    },
-    'album.$.title': {
-        type: String,
-        label: 'Image Title'
-    },
-    'album.$.image': {
-        type: String,
-        label: 'Image Path'
-    },
     createdBy: orion.attribute('createdBy'),
     createdAt: orion.attribute('createdAt')
 }));
