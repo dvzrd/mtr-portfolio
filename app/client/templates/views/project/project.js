@@ -4,6 +4,8 @@ Template.project.onCreated(function() {
     var projectId = FlowRouter.getParam('projectId');
     self.subscribe('project', projectId);
   });
+
+  $('.ui.sticky').sticky();
 });
 
 Template.project.helpers({

@@ -14,8 +14,36 @@
 
   &.project {
 
-    .ui.album.container {
-      margin: 0 -@space-base;
+    .ui.left.rail {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: @full;
+      margin: 0;
+      padding: @space-base;
+      background-color: @background-color;
+      z-index: 1;
+
+      @media (min-width: @desktop-width) {
+        position: absolute;
+        padding: @space-base;
+        width: @quarter;
+      }
+    }
+
+    .ui.album.module {
+      margin: 0 @space-base;
+
+      @media (min-width: @desktop-width) {
+        margin: 0 @space-base 0 @quarter;
+      }
+    }
+
+    @media (max-width: @tablet-width) {
+
+      .ui.projects.module {
+        display: none;
+      }
     }
   }
 }

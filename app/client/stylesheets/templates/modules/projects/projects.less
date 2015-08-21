@@ -3,89 +3,90 @@
 // projects styles
 
 .projects.module {
-	width: @full;
-	margin: 0;
+  width: @full;
+  margin: 0;
   background-color: @neutral-color;
+  z-index: 1;
 
-	.ui.card {
-		width: @full;
-		margin: 0;
-		overflow: hidden;
-		box-shadow: 0 0 @space-atomic @space-quantum @neutral-color;
-		border-radius: 0;
-		background-color: @neutral-color;
+  .ui.card {
+    width: @full;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 0 @space-atomic @space-quantum @neutral-color;
+    border-radius: 0;
+    background-color: @neutral-color;
 
-		@media (min-width: @phone-width) and (max-width: @tablet-width) {
-			width: @half;
-		}
+    @media (min-width: @phone-width) and (max-width: @tablet-width) {
+      width: @half;
+    }
 
-		@media (min-width: @tablet-width) {
-			width: @third;
-		}
+    @media (min-width: @tablet-width) {
+      width: @third;
+    }
 
-		@media (min-width: @large-desktop-width) {
-			width: @quarter;
-		}
+    @media (min-width: @large-desktop-width) {
+      width: @quarter;
+    }
 
-		@media (min-width: @huge-desktop-width) {
-			width: @sixth;
-		}
+    @media (min-width: @huge-desktop-width) {
+      width: @sixth;
+    }
 
-		@media (min-width: @jumbo-desktop-width) {
-			width: @eighth;
-		}
+    @media (min-width: @jumbo-desktop-width) {
+      width: @eighth;
+    }
 
-		@media (min-width: @giant-desktop-width) {
-			width: @sixth;
-		}
+    @media (min-width: @giant-desktop-width) {
+      width: @sixth;
+    }
 
-		@media (min-width: @massive-desktop-width) {
-			width: @quarter;
-		}
+    @media (min-width: @massive-desktop-width) {
+      width: @quarter;
+    }
 
-		.image {
-			margin: 0;
-			border-radius: 0 !important;
-			opacity: 1;
-			transition: all @faster;
-			transform: scale(1.1);
-		}
+    .image {
+      margin: 0;
+      border-radius: 0 !important;
+      opacity: 1;
+      transition: all @faster;
+      transform: scale(1.1);
+    }
 
-		.title {
-			position: absolute;
-			top: 0;
-			left: 0;
-			display: flex;
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
       align-items: center;
       justify-content: center;
-			width: @full;
-			height: @full;
-			padding: @space-large;
-			color: darken(@highlight-color, @sixth);
-			font-weight: 300;
-			letter-spacing: @space-mini;
-			text-align: center;
-	    text-transform: uppercase;
-			text-shadow: @space-quantum @space-quantum @space-quantum @secondary-color;
-	    backface-visibility: hidden;
-			opacity: 0;
-			transition: all @faster;
+      width: @full;
+      height: @full;
+      padding: @space-large;
+      color: darken(@highlight-color, @sixth);
+      font-weight: 300;
+      letter-spacing: @space-mini;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: @space-quantum @space-quantum @space-quantum @secondary-color;
+      backface-visibility: hidden;
+      opacity: 0;
+      transition: all @faster;
       transform: translate3d(0, @space-base, 0) scale(1.1);
-		}
+    }
 
-		&:hover,
-		&:focus {
+    &:hover,
+    &:focus {
 
-			.image {
-				box-shadow: 0 0 @space-tiny 0 @secondary-color inset;
-				opacity: 0.75;
-	      transform: scale(1);
-			}
+      .image {
+        box-shadow: 0 0 @space-tiny 0 @secondary-color inset;
+        opacity: 0.75;
+        transform: scale(1);
+      }
 
-			.title {
-				opacity: 1;
-				transform: translate3d(0,0,0) scale(1);
-			}
-		}
-	}
+      .title {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+    }
+  }
 }
