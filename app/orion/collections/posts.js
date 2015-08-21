@@ -1,9 +1,9 @@
-Projects = new orion.collection('projects', {
-    singularName: 'project',
-    pluralName: 'projects',
-    title: 'Projects',
+Posts = new orion.collection('posts', {
+    singularName: 'post',
+    pluralName: 'posts',
+    title: 'Posts',
     link: {
-        title: 'Projects'
+        title: 'Posts'
     },
     tabular: {
         columns: [
@@ -20,7 +20,7 @@ Projects = new orion.collection('projects', {
     }
 });
 
-Projects.attachSchema(new SimpleSchema({
+Posts.attachSchema(new SimpleSchema({
     title: {
         type: String,
         label: 'Title'
