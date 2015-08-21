@@ -6,7 +6,7 @@ html {
 
   body {
     color: @font-color;
-		font-family: @font-family-base;
+    font-family: @font-family-base;
     font-size: @font-size-base;
     line-height: @line-height-base;
 
@@ -15,7 +15,7 @@ html {
       margin-bottom: @space-base;
       font-family: @font-family-base;
       font-size: @font-size-base;
-      line-height: @line-height-large;
+      line-height: @line-height-base;
 
       @media (min-width: @tablet-width) {
         font-size: @font-size-base + @font-size-micro;
@@ -81,7 +81,13 @@ html {
       color: @header-color;
       font-size: inherit;
       font-family: @font-family-base;
-      font-weight: bold;
+
+      &.ui.header {
+        text-transform: uppercase;
+        font-weight: 100;
+        line-height: @line-height-base;
+        letter-spacing: @space-mini;
+      }
 
       small {
         color: lighten(@header-color, @eighth);
@@ -281,5 +287,5 @@ html {
         font-size: @font-size-large;
       }
     }
-	}
+  }
 }

@@ -20,20 +20,36 @@
       left: 0;
       width: @full;
       margin: 0;
-      padding: @space-base;
+      padding: @space-base 0;
       background-color: @background-color;
       z-index: 1;
 
       @media (min-width: @desktop-width) {
         position: absolute;
-        padding: @space-base;
         width: @quarter;
       }
 
       .ui.fixed.sticky {
+        position: relative;
+        margin: 0;
+        padding: 0 @space-base;
+
+        @media (min-width: @desktop-width) {
+          position: fixed;
+          width: @quarter;
+        }
 
         &.offset {
           margin-top: @space-jumbo;
+        }
+
+        .ui.header {
+          margin: 0 0 @space-base;
+          text-align: center;
+
+          @media (min-width: @desktop-width) {
+            margin: @space-tiny 0 @space-base;
+          }
         }
       }
     }
@@ -46,7 +62,7 @@
       }
     }
 
-    @media (max-width: @tablet-width) {
+    @media (max-width: @desktop-width) {
 
       .ui.projects.module {
         display: none;
