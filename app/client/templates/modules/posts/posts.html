@@ -1,0 +1,16 @@
+<template name="posts">
+    <div class="ui posts cards module">
+        {{#if Template.subscriptionsReady}}
+            {{#each posts}}
+                <div class="ui card">
+                    <a class="image" href="{{pathFor '/posts/:id' id=_id}}">
+                        <img class="fluid image" src="{{thumb}}" />
+                        <h2 class="title">{{title}}</h2>
+                    </a>
+                </div>
+            {{/each}}
+        {{else}}
+            {{> loading}}
+        {{/if}}
+    </div>
+</template>
