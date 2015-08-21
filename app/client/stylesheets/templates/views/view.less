@@ -84,5 +84,60 @@
 
   &.contact {
 
+    @media (min-width: @tablet-width) {
+      height: @fluid-three-quarters + 10vh;
+    }
+
+    @media (min-width: @large-desktop-width) {
+      height: @fluid-full - 10vh;
+    }
+
+    .email {
+
+      .ui.icon.header {
+        display: block;
+        margin: @space-large auto;
+        text-align: center;
+        color: @header-color;
+        transition: all @faster;
+
+        .content {
+          padding: 0;
+          color: @link-color;
+          font-size: @font-size-small;
+          transition: all @faster;
+
+          @media (min-width: @phone-width) {
+            font-size: @font-size-base;
+          }
+
+          .sub.header {
+            font-size: @three-quarters;
+            line-height: @line-height-giant;
+            transform: scale(1);
+            transition: all @faster;
+          }
+        }
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+
+        .ui.icon.header {
+          color: @link-color;
+
+          .content {
+            color: @header-color;
+
+            .sub.header {
+              color: @offset-color;
+              letter-spacing: @space-tiny;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
   }
 }
