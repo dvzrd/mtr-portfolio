@@ -26,13 +26,14 @@
 
       @media (min-width: @desktop-width) {
         position: absolute;
-        width: @quarter;
+        width: @quarter + 5%;
       }
 
       .ui.fixed.sticky {
         position: relative;
-        margin: 0;
-        padding: 0 @space-base;
+        margin: @space-base;
+        padding: @space-base;
+        border: @space-micro solid @primary-color;
 
         @media (min-width: @desktop-width) {
           position: fixed;
@@ -40,15 +41,14 @@
         }
 
         &.offset {
-          margin-top: @space-jumbo;
+          margin-top: @space-massive;
         }
 
         .ui.header {
-          margin: 0 0 @space-base;
+          margin-bottom: @space-base;
           text-align: center;
 
           @media (min-width: @desktop-width) {
-            margin: @space-small 0 @space-base;
             text-align: left;
           }
         }
