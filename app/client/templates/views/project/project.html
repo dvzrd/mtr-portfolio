@@ -1,17 +1,24 @@
 <template name="project">
-  <div class="project view">
-    {{#if Template.subscriptionsReady}}
-      {{#with project}}
-        <p>{{title}}</p>
-        <p>{{thumb}}</p>
-        {{#each album}}
-          <img src="{{image}}" />
-          <p>{{title}}</p>
-        {{/each}}
-      {{/with}}
-      {{> projects}}
-    {{else}}
-      {{> loading}}
-    {{/if}}
-  </div>
+    <div class="project view">
+        {{#if Template.subscriptionsReady}}
+            {{#with project}}
+                <div class="ui left rail">
+                    <h1 class="ui header">{{title}}</h1>
+                </div>
+                <div class="ui album container">
+                    {{#each album}}
+                        <div class="album item">
+                            <img class="ui fluid image" src="{{image}}" />
+                            <div class="title">
+                                {{title}}
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/with}}
+            {{> projects}}
+        {{else}}
+            {{> loading}}
+        {{/if}}
+    </div>
 </template>
