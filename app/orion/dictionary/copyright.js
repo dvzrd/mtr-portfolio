@@ -13,7 +13,7 @@ orion.dictionary.addDefinition('url', 'copyright', {
     label: 'Creator\'s URL'
 });
 
-orion.dictionary.addDefinition('url', 'message', {
+orion.dictionary.addDefinition('message', 'copyright', {
     type: String,
     label: 'Copyright Message'
 });
