@@ -6,21 +6,27 @@
   position: relative;
   flex: 1;
   margin: 0;
-  padding: @space-base 0;
+  padding: @space-base @space-base @space-giant;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 @space-large;
+  }
 
   .ui.header {
+    margin: @space-large auto;
     text-align: center;
 
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       text-align: left;
     }
   }
 
   &.root {
-    padding-top: 0;
+    padding: 0 0 @space-base;
   }
 
   &.project {
+    padding: 0 0 @space-base;
 
     .ui.left.rail {
       position: relative;
@@ -63,19 +69,7 @@
   }
 
   &.about {
-    padding: @space-base @space-base @space-giant;
 
-    @media (min-width: @desktop-width) {
-      margin: 0 @space-large;
-    }
-
-    .ui.header {
-      margin: @space-large auto;
-
-      @media (min-width: @tablet-width) {
-        text-align: left;
-      }
-    }
   }
 
   &.blog {

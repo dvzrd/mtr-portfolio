@@ -1,9 +1,15 @@
 <template name="contact">
-  <div class="animated fadeIn contact view">
-	  <h1 class="title">{{ title }}</h1>
-	  <div class="content">
-			{{{ content }}}
-      </div>
-      <p>subscribe</p>
-	</div>
+    <div class="animated fadeIn contact view">
+        <h1 class="ui header">{{ dict 'contact.title' 'Contact' }}</h1>
+        <div class="ui stackable grid">
+            <div class="eight wide column">
+                <div class="contact content">
+                    {{{ dict 'contact.content' }}}
+                </div>
+            </div>
+            <div class="eight wide column">
+                <p>subscribe</p>
+            </div>
+        </div>
+    </div>
 </template>
