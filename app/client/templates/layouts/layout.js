@@ -21,14 +21,6 @@ Template.layout.onRendered(function() {
       top : 'above',
       // when below offset
       notTop : 'below'
-    },
-    // callback when pinned, `this` is headroom object
-    onPin : function() {},
-    // callback when unpinned, `this` is headroom object
-    onUnpin : function() {},
-    // callback when above offset, `this` is headroom object
-    onTop : function() {},
-    // callback when below offset, `this` is headroom object
-    onNotTop : function() {}
+    }
   });
 });
