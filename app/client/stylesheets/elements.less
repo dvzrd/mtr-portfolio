@@ -6,12 +6,12 @@
 
 .ui.button {
   background-color: @offset-color;
-	color: @light;
+  color: @light;
 
   &:hover,
   &:focus {
     background-color: @primary-color;
-		color: @secondary-color;
+    color: @secondary-color;
   }
 
   &.primary {
@@ -21,7 +21,7 @@
     &:hover,
     &:focus {
       background-color: @secondary-color;
-			color: @primary-color;
+      color: @primary-color;
     }
   }
 
@@ -32,7 +32,7 @@
     &:hover,
     &:focus {
       background-color: @primary-color;
-			color: @light;
+      color: @light;
     }
   }
 
@@ -51,22 +51,22 @@
 // lists
 
 .ui.list {
-	list-style-type: square;
+  list-style-type: square;
 
   &.unstyled {
     padding: 0;
-	  list-style-type: none;
+    list-style-type: none;
   }
 
-	&.inline {
-		display: inline;
-		padding: 0;
-		list-style-type: none;
+  &.inline {
+    display: inline;
+    padding: 0;
+    list-style-type: none;
 
-		.item {
-			display: inline;
-		}
-	}
+    .item {
+      display: inline;
+    }
+  }
 
   @media (min-width: @desktop-width) {
     text-indent: @space-large;
@@ -83,33 +83,33 @@
     width: @full;
   }
 
-	&.background {
-		position: absolute;
-		margin: 0;
-		z-index: -1;
+  &.background {
+    position: absolute;
+    margin: 0;
+    z-index: -1;
 
-		&.top {
-			top: 0;
-		}
+    &.top {
+      top: 0;
+    }
 
-		&.right {
-			right: 0;
-		}
+    &.right {
+      right: 0;
+    }
 
-		&.bottom {
-			bottom: 0;
-		}
+    &.bottom {
+      bottom: 0;
+    }
 
-		&.left {
-			left: 0;
-		}
-	}
+    &.left {
+      left: 0;
+    }
+  }
 }
 
 // other
 
 hr {
-	margin: 0;
-	border: 0;
-	border-bottom: @space-atomic solid @divider-color;
+  margin: 0;
+  border: 0;
+  border-bottom: @space-atomic solid @divider-color;
 }
