@@ -3,46 +3,46 @@
 // header styles
 
 .header.module {
-	display: inline-block;
-	width: @full;
-	padding: @space-small 0;
-	text-align: center;
+  display: inline-block;
+  width: @full;
+  padding: @space-small 0;
+  text-align: center;
 
-	@media (min-width: @tablet-width) {
-		padding: @space-small;
-		text-align: left;
-	}
+  @media (min-width: @tablet-width) {
+    padding: @space-small;
+    text-align: left;
+  }
 
-	.ui.header {
-		position: relative;
-		width: auto;
-		margin: 0;
-		font-size: @font-size-base;
-		font-weight: 100;
-		text-transform: uppercase;
-		text-decoration: none;
+  .ui.header {
+    position: relative;
+    width: auto;
+    margin: 0;
+    font-size: @font-size-base;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: @space-tiny;
 
-		@media (min-width: @tablet-width) {
-			display: inline-block;
-		}
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+    }
 
-		&:hover,
-		&:focus {
-			color: @highlight-color;
-		}
+    &:hover,
+    &:focus {
+      color: @highlight-color;
+    }
 
-		.ui.image {
-			margin: 0;
-		}
-	}
+    .ui.image {
+      margin: 0;
+    }
+  }
 
-	.icons.module {
-		float: right;
+  .icons.module {
+    float: right;
 
-		@media (min-width: @tablet-width) {
-			display: inline-block;
-			width: auto;
-		}
-	}
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+      width: auto;
+    }
+  }
 }

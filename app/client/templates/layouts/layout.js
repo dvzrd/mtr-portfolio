@@ -1,26 +1,35 @@
 Template.layout.onRendered(function() {
   $('header.header').headroom({
     // vertical offset in px before element is first unpinned
-    offset : 0,
+    offset: 0,
     // scroll tolerance in px before state changes
-    tolerance : 0,
+    tolerance: 0,
     // or scroll tolerance per direction
-    tolerance : {
-      down : 0,
-      up : 0
+    tolerance: {
+      down: 0,
+      up: 0
     },
     // css classes to apply
-    classes : {
+    classes: {
       // when element is initialised
-      initial : 'headroom',
+      initial: 'headroom',
       // when scrolling up
-      pinned : 'pinned',
+      pinned: 'pinned',
       // when scrolling down
-      unpinned : 'unpinned',
+      unpinned: 'unpinned',
       // when above offset
-      top : 'above',
+      top: 'above',
       // when below offset
-      notTop : 'below'
+      notTop: 'below'
+    },
+    onPin: function() {
+      $('.ui.fixed.sticky').addClass('offset');
+    },
+    onUnpin: function() {
+      $('.ui.fixed.sticky').removeClass('offset');
+    },
+    onTop: function() {
+      $('.ui.fixed.sticky').removeClass('offset');
     }
   });
 });
