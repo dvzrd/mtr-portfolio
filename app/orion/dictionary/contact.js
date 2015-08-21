@@ -3,6 +3,11 @@ orion.dictionary.addDefinition('title', 'contact', {
     label: 'Title'
 });
 
+orion.dictionary.addDefinition('image', 'contact', {
+    type: String,
+    label: 'Title'
+});
+
 orion.dictionary.addDefinition('content', 'contact',
     orion.attribute('froala')
 );

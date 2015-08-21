@@ -1,15 +1,16 @@
 <template name="contact">
     <div class="animated fadeIn contact view">
         <h1 class="ui header">{{ dict 'contact.title' 'Contact' }}</h1>
-        <div class="ui stackable grid">
+        <div class="ui relaxed stackable grid">
             <div class="eight wide column">
                 <div class="contact content">
                     {{{ dict 'contact.content' }}}
                 </div>
             </div>
             <div class="eight wide column">
-                <p>subscribe</p>
+                <p>contact info list</p>
             </div>
         </div>
+        <img class="ui fluid bottom background image" src="{{ dict 'contact.image' '/images/contact/footer.png' }}" />
     </div>
 </template>
