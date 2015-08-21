@@ -28,7 +28,7 @@ html {
           left: 0;
           width: @full;
           box-shadow: 0 0 @space-mini 0 @secondary-color;
-          background: @light;
+          background: @background-color;
           transition: transform @faster linear;
 
           &.pinned {
@@ -52,6 +52,7 @@ html {
       .main {
         display: flex;
         position: relative;
+        padding-bottom: @space-large + @space-tiny;
       }
 
       .footer {
@@ -59,7 +60,7 @@ html {
         bottom: 0;
         left: 0;
         width: @full;
-        background-color: @light;
+        background-color: @background-color;
         z-index: 3
       }
     }

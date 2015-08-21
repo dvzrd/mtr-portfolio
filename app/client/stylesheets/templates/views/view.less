@@ -22,11 +22,13 @@
   }
 
   &.root {
-    padding: 0 0 @space-base;
+    margin: 0;
+    padding: 0;
   }
 
   &.project {
-    padding: 0 0 @space-base;
+    margin: 0;
+    padding: 0;
 
     .ui.left.rail {
       position: relative;
@@ -34,7 +36,7 @@
       left: 0;
       width: @full;
       margin: 0;
-      padding: @space-base 0;
+      padding: 0;
       background-color: @background-color;
       z-index: 1;
 
@@ -45,7 +47,7 @@
 
       .ui.fixed.sticky {
         position: relative;
-        margin: @space-base;
+        margin: @space-large @space-base;
         padding: @space-base;
         border: @space-micro solid @primary-color;
 
@@ -55,7 +57,7 @@
         }
 
         &.offset {
-          margin-top: @space-massive;
+          margin-top: @space-giant;
         }
       }
     }

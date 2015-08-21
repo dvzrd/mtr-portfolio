@@ -5,6 +5,8 @@
 .projects.module {
   width: @full;
   margin: 0;
+  border-left: @space-atomic solid @background-color;
+  border-right: @space-atomic solid @background-color;
   background-color: transparent;
   z-index: 1;
 
@@ -12,7 +14,7 @@
     width: @full;
     margin: 0;
     overflow: hidden;
-    box-shadow: 0 0 @space-atomic @space-quantum @neutral-color;
+    box-shadow: 0 0 @space-atomic @space-atomic @background-color;
     border-radius: 0;
     background-color: @primary-color;
 
