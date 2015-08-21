@@ -1,10 +1,21 @@
 <template name="menu">
-  <nav class="menu module">
-    {{> views}}
-    {{#if currentUser}}
-  	  <a class="ui primary admin button" href="/admin">
-  		  Admin
-  	  </a>
-    {{/if}}
-	</nav>
+    <nav class="menu module">
+        <a class="ui basic button" href="{{pathFor 'root'}}">
+            {{ dict 'menu.root' 'Work' }}
+        </a>
+        <a class="ui basic button" href="{{pathFor 'about'}}">
+            {{ dict 'menu.about' 'About' }}
+        </a>
+        <a class="ui basic button" href="{{pathFor 'blog'}}">
+            {{ dict 'menu.blog' 'Blog' }}
+        </a>
+        <a class="ui basic button" href="{{pathFor 'contact'}}">
+            {{ dict 'menu.contact' 'Contact' }}
+        </a>
+        {{#if currentUser}}
+            <a class="ui primary admin button" href="{{pathFor 'admin'}}">
+                {{ dict 'menu.admin' 'Admin' }}
+            </a>
+        {{/if}}
+    </nav>
 </template>
