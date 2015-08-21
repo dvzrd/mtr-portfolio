@@ -6,7 +6,32 @@
   margin: @space-base @space-base @space-giant;
 
   @media (min-width: @desktop-width) {
-    margin: @space-base @space-base @space-giant @quarter + 5%;
+    margin-left: @quarter + 5%;
+  }
+
+  @media (min-width: @large-desktop-width) {
+    margin-right: 5%;
+    margin-left: @quarter + 6%;
+  }
+
+  @media (min-width: @huge-desktop-width) {
+    margin-right: 8%;
+    margin-left: @quarter + 9%;
+  }
+
+  @media (min-width: @huge-desktop-width) {
+    margin-right: 10%;
+    margin-left: @quarter + 11%;
+  }
+
+  @media (min-width: @giant-desktop-width) {
+    margin-right: 14%;
+    margin-left: @quarter + 15%;
+  }
+
+  @media (min-width: @massive-desktop-width) {
+    margin-right: 16%;
+    margin-left: @quarter + 17%;
   }
 
   .album.item {
