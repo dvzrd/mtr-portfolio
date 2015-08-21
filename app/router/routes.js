@@ -25,6 +25,15 @@ FlowRouter.route('/blog', {
   }
 });
 
+FlowRouter.route('/blog/:postId', {
+  name: 'post',
+  action: function() {
+    BlazeLayout.render('layout', {
+      content: 'post'
+    });
+  }
+});
+
 FlowRouter.route('/contact', {
   name: 'contact',
   action: function() {
