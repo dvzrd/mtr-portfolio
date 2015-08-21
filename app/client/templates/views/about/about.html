@@ -1,7 +1,15 @@
 <template name="about">
     <div class="animated fadeIn about view">
         <h1 class="ui header">About</h1>
-
-        <p>some module here</p>
+        <div class="ui stackable grid">
+            <div class="eight wide column">
+                <div class="about content">
+                    {{{content}}}
+                </div>
+            </div>
+            <div class="eight wide column">
+                <img class="ui fluid image" src="/images/about/tree.png" />
+            </div>
+        </div>
     </div>
 </template>

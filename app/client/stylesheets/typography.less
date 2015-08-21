@@ -5,7 +5,7 @@
 html {
 
   body {
-    color: @font-color;
+    color: fade(@font-color, @three-quarters);
     font-family: @font-family-base;
     font-size: @font-size-base;
     line-height: @line-height-base;
@@ -80,7 +80,7 @@ html {
       margin-bottom: @space-base;
       color: @header-color;
       font-size: inherit;
-      font-family: @font-family-base;
+      font-family: @font-family-header;
 
       &.ui.header {
         text-transform: uppercase;

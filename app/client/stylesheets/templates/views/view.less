@@ -45,7 +45,6 @@
         }
 
         .ui.header {
-          margin-bottom: @space-base;
           text-align: center;
 
           @media (min-width: @desktop-width) {
@@ -61,5 +60,25 @@
         display: none;
       }
     }
+  }
+
+  &.about {
+    padding: @space-base @space-base @space-giant;
+
+    .ui.header {
+      margin: @space-large auto;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 @space-large;
+    }
+  }
+
+  &.blog {
+
+  }
+
+  &.contact {
+
   }
 }
