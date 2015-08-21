@@ -1,14 +1,13 @@
 <template name="layout">
-  <div class="layout">
-	  <header class="header">
-      {{> header}}
-		</header>
-		<main class="main">
-      {{> Template.dynamic template=content}}
-      {{> copyright}}
-		</main>
-		<footer class="footer">
-      {{> footer}}
-		</footer>
-	</div>
+    <div class="layout">
+        <header class="header">
+            {{> header}}
+        </header>
+        <main class="main">
+            {{> Template.dynamic template=content}}
+        </main>
+        <footer class="footer">
+            {{> footer}}
+        </footer>
+    </div>
 </template>

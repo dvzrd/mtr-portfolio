@@ -3,12 +3,14 @@
 // copyright styles
 
 .copyright.module {
-	margin-bottom: @space-huge + @space-tiny;
-	font-size: @font-size-small;
-	text-align: center;
-	color: @secondary-color;
+  margin: @space-base 0;
+  color: @secondary-color;
+  font-size: @font-size-small;
+  text-align: center;
 
-	@media (min-width: @tablet-width) {
-		font-size: @font-size-small + @font-size-micro;
-	}
+  @media (min-width: @desktop-width) {
+    position: fixed;
+    bottom: @space-large + @space-small;
+    text-align: left;
+  }
 }
