@@ -1,0 +1,14 @@
+<template name="post">
+    <div class="animated fadeIn post view">
+        {{#if Template.subscriptionsReady}}
+            {{#with post}}
+                <h2 class="ui header">{{title}}</h2>
+                <div class="content">
+                    {{{content}}}
+                </div>
+            {{/with}}
+        {{else}}
+            {{> loading}}
+        {{/if}}
+    </div>
+</template>
