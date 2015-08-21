@@ -8,6 +8,14 @@
   margin: 0;
   padding: @space-base 0;
 
+  .ui.header {
+    text-align: center;
+
+    @media (min-width: @desktop-width) {
+      text-align: left;
+    }
+  }
+
   &.root {
     padding-top: 0;
   }
@@ -43,14 +51,6 @@
         &.offset {
           margin-top: @space-massive;
         }
-
-        .ui.header {
-          text-align: center;
-
-          @media (min-width: @desktop-width) {
-            text-align: left;
-          }
-        }
       }
     }
 
@@ -65,12 +65,16 @@
   &.about {
     padding: @space-base @space-base @space-giant;
 
-    .ui.header {
-      margin: @space-large auto;
-    }
-
     @media (min-width: @desktop-width) {
       margin: 0 @space-large;
+    }
+
+    .ui.header {
+      margin: @space-large auto;
+
+      @media (min-width: @tablet-width) {
+        text-align: left;
+      }
     }
   }
 

@@ -1,7 +1,7 @@
 SEO = new FlowRouterSEO();
 
 SEO.setDefaults({
-  title: 'Meteor Portfolio | A Portfolio App for Artists and Photographers',
+  title: 'Meteor Portfolio | A Portfolio App for Artists and Photographe',
   description: 'A portfolio app for artists or photographers built with Meteor using Semantic-UI and Orion CMS',
   meta: {
     'property="og:type"': 'website',
