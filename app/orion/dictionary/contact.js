@@ -18,11 +18,6 @@ orion.dictionary.addDefinition('message', 'contact', {
     label: 'Message'
 });
 
-orion.dictionary.addDefinition('image', 'contact', {
-    type: String,
-    label: 'Title'
-});
-
 orion.dictionary.addDefinition('content', 'contact',
     orion.attribute('froala')
 );
