@@ -1,19 +1,19 @@
 <template name="menu">
     <nav class="menu module">
-        <a class="ui basic button" href="{{pathFor 'root'}}">
+        <a class="ui basic {{isActiveRoute 'root'}} button" href="{{pathFor 'root'}}">
             {{ dict 'menu.root' 'Work' }}
         </a>
-        <a class="ui basic button" href="{{pathFor 'about'}}">
+        <a class="ui basic {{isActiveRoute 'about'}} button" href="{{pathFor 'about'}}">
             {{ dict 'menu.about' 'About' }}
         </a>
-        <a class="ui basic button" href="{{pathFor 'blog'}}">
+        <a class="ui basic {{isActiveRoute 'blog'}} button" href="{{pathFor 'blog'}}">
             {{ dict 'menu.blog' 'Blog' }}
         </a>
-        <a class="ui basic button" href="{{pathFor 'contact'}}">
+        <a class="ui basic {{isActiveRoute 'contact'}} button" href="{{pathFor 'contact'}}">
             {{ dict 'menu.contact' 'Contact' }}
         </a>
         {{#if currentUser}}
-            <a class="ui primary admin button" href="{{pathFor 'admin'}}">
+            <a class="ui primary admin {{isActiveRoute 'admin'}} button" href="{{pathFor 'admin'}}">
                 {{ dict 'menu.admin' 'Admin' }}
             </a>
         {{/if}}
