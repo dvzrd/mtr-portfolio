@@ -23,7 +23,7 @@ dburles:collection-helpers@1.0.3
 dburles:mongo-collection-instances@0.3.4
 ddp@1.1.0
 deps@1.0.7
-dvz:orion-semantic-ui@0.4.2
+dvz:orion-semantic-ui@0.4.7
 ejson@1.0.6
 email@1.0.6
 fabienb4:autoform-semantic-ui@0.4.6
@@ -72,7 +72,7 @@ ordered-dict@1.0.3
 orionjs:accounts@1.4.2
 orionjs:attributes@1.4.0
 orionjs:base@1.4.1
-orionjs:collections@1.4.1
+orionjs:collections@1.4.4
 orionjs:config@1.4.0
 orionjs:core@1.4.0
 orionjs:dictionary@1.4.0
@@ -100,9 +100,9 @@ tracker@1.0.7
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
-useraccounts:core@1.12.1
-useraccounts:semantic-ui@1.12.1
+useraccounts:core@1.12.2
+useraccounts:semantic-ui@1.12.2
 waitingkuo:headroomjs@0.0.1
 webapp@1.2.0
 webapp-hashing@1.0.3
-zimme:active-route@2.3.0
+zimme:active-route@2.3.1
