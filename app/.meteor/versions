@@ -69,6 +69,7 @@ nicolaslopezj:reactive-templates@1.2.1
 nicolaslopezj:roles@1.2.0
 nicolaslopezj:router-layer@0.0.10
 npm-bcrypt@0.7.8_2
+npm-container@1.1.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 orionjs:accounts@1.4.2
