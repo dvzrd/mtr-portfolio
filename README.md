@@ -79,6 +79,7 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [flemay:less-autoprefixer](http://github.com/flemay/less-autoprefixer)
   * [momentjs:moment](http://github.com/moment/moment/)
   * [msavin:mongol](http://github.com/msavin/Mongol)
+  * [meteorhacks:npm](https://github.com/meteorhacks/npm)
 
 The "insecure" and "autopublish" packages are removed by default (they make your app vulnerable).
 
