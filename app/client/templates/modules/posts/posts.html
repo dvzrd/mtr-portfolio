@@ -1,19 +1,28 @@
 <template name="posts">
-    <div class="ui posts cards module">
-        {{#if Template.subscriptionsReady}}
+    {{#if Template.subscriptionsReady}}
+        <div class="ui stackable four column posts module grid">
             {{#each posts}}
-                <div class="ui card">
-                    <a class="image" href="{{pathFor '/blog/:id' id=_id}}">
-                        <img class="fluid image" src="{{thumb}}" />
-                        <h2 class="title">{{title}}</h2>
-                        <div class="description">
-                            {{description}}
+                <div class="column">
+                    <a class="ui fluid card" href="{{pathFor '/blog/:id' id=_id}}">
+                        <div class="content">
+                            <h2 class="header">{{title}}</h2>
+                        </div>
+                        <div class="image">
+                            <img class="fluid image" src="{{thumb}}"/>
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                {{description}}
+                            </div>
+                        </div>
+                        <div class="extra content">
+                            <div class="meta">posted 4 days ago</div>
                         </div>
                     </a>
                 </div>
             {{/each}}
-        {{else}}
-            {{> loading}}
-        {{/if}}
-    </div>
+        </div>
+    {{else}}
+        {{> loading}}
+    {{/if}}
 </template>
