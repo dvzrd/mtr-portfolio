@@ -1,6 +1,6 @@
 <template name="posts">
     {{#if Template.subscriptionsReady}}
-        <div class="ui stackable four column posts module grid">
+        <div class="ui stackable doubling four column posts module grid">
             {{#each posts}}
                 <div class="column">
                     <a class="ui fluid card" href="{{pathFor '/blog/:id' id=_id}}">

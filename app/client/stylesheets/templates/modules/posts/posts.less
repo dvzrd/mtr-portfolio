@@ -3,8 +3,21 @@
 // posts styles
 
 .posts.module {
+  margin-top: @space-tiny;
 
   .ui.fluid.card {
+    border-radius: 0;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+
+      .content {
+
+        .header {
+          color: @link-color;
+        }
+      }
+    }
   }
 }
