@@ -2,8 +2,13 @@
     <div class="animated fadeIn post view">
         {{#if Template.subscriptionsReady}}
             {{#with post}}
-                <h2 class="ui header">{{title}}</h2>
-                <div class="content">
+                <h2 class="ui header">
+                    {{title}}
+                    <small class="sub header">
+                        posted {{formatDate createdAt}}
+                    </small>
+                </h2>
+                <div class="post content">
                     {{{content}}}
                 </div>
             {{/with}}

@@ -1,6 +1,6 @@
 <template name="posts">
     {{#if Template.subscriptionsReady}}
-        <div class="ui stackable doubling four column posts module grid">
+        <div class="ui stackable doubling three column posts module grid">
             {{#each posts}}
                 <div class="column">
                     <a class="ui fluid card" href="{{pathFor '/blog/:id' id=_id}}">
@@ -16,7 +16,7 @@
                             </div>
                         </div>
                         <div class="extra content">
-                            <div class="meta">{{formatDate createdAt}}</div>
+                            <div class="meta">posted {{formatDate createdAt}}</div>
                         </div>
                     </a>
                 </div>
