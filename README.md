@@ -75,6 +75,7 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [semantic:ui-css](https://github.com/Semantic-Org/Semantic-UI-CSS)
   * [natestrauser:animate-css](http://github.com/nate-strauser/meteor-animate-css)
   * [waitingkuo:headroomjs](https://github.com/waitingkuo/meteor-headroomjs)
+  * [miro:mailchimp](https://github.com/MiroHibler/meteor-mailchimp)
 * Development
   * [flemay:less-autoprefixer](http://github.com/flemay/less-autoprefixer)
   * [momentjs:moment](http://github.com/moment/moment/)
