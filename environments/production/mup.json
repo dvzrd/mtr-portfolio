@@ -1,22 +1,0 @@
-{ 
-  "servers": [ 
-    { 
-      "host": "<REPLACE ME WITH IP>", 
-      "username": "root", 
-      "pem": "~/.ssh/id_<REPLACE ME WITH FINGERPRINT>" 
-    } 
-  ], 
-  "setupMongo": true, 
-  "setupNode": true, 
-  "nodeVersion": "0.10.38", 
-  "setupPhantom": true, 
-  "appName": "myApp", 
-  "app": "../../app", 
-  "env": { 
-    "PORT": 80, 
-    "ROOT_URL": "<REPLACE ME WITH IP>", 
-    "NODE_ENV": "production" ,
-     "MAIL_URL": "%MAIL_URL%" 
-  }, 
-  "deployCheckWaitTime": 15 
-}
