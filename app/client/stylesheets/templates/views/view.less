@@ -94,19 +94,82 @@
   }
 
   &.post {
+    margin: 0;
     padding: 0;
 
     .ui.header {
-      margin-left: @space-base;
-      margin-right: @space-base;
+      padding-left: @space-base;
+      padding-right: @space-base;
+
+      @media (min-width: @desktop-width) {
+        margin-left: @space-large;
+        margin-right: @space-large;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        margin-left: @sixteenth;
+        margin-right: @sixteenth;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        margin-left: @eighth;
+        margin-right: @eighth;
+      }
+
+      @media (min-width: @huge-desktop-width) {
+        margin-left: @sixth;
+        margin-right: @sixth;
+      }
     }
 
     .post.content {
-      margin: @space-base;
+      margin: 0;
+      padding: @space-base;
+
+      @media (min-width: @desktop-width) {
+        margin-left: @space-large;
+        margin-right: @space-large;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        margin-left: @sixteenth;
+        margin-right: @sixteenth;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        margin-left: @eighth;
+        margin-right: @eighth;
+      }
+
+      @media (min-width: @huge-desktop-width) {
+        margin-left: @sixth;
+        margin-right: @sixth;
+      }
     }
 
     #disqus_thread {
-      margin: @space-base;
+      margin: 0;
+      padding: @space-base;
+
+      @media (min-width: @desktop-width) {
+        margin-left: @space-large;
+        margin-right: @space-large;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        margin-left: @sixteenth;
+        margin-right: @sixteenth;
+      }
+
+      @media (min-width: @large-desktop-width) {
+        margin-left: @eighth;
+        margin-right: @eighth;
+      }
+
+      @media (min-width: @huge-desktop-width) {
+        margin-left: @sixth;
+        margin-right: @sixth;
+      }
     }
   }
 
