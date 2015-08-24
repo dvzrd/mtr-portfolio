@@ -1,0 +1,31 @@
+@import '../../../variables';
+
+// mailchimp styles
+
+.mailchimp.module {
+  margin: @space-huge auto;
+  padding: @space-large;
+  background-color: @neutral-color;
+
+  @media (min-width: @phone-width) and (max-width: @tablet-width) {
+    padding-left: @sixth;
+    padding-right: @sixth;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: @quarter;
+    padding-right: @quarter;
+  }
+
+  .mailchimp-message {
+    margin: 0 0 @space-base;
+  }
+
+  .ui.action.input {
+
+    .mailchimp-email {
+      border: 0;
+      box-shadow: inset 0 0 @space-mini 0 @gray-lighter;
+    }
+  }
+}
