@@ -94,7 +94,7 @@
         transform: translate3d(@full,0,0);
       }
 
-      .ui.vertical.buttons {
+      .share-buttons {
         position: absolute;
         top: @space-jumbo;
         left: 0;
@@ -105,8 +105,11 @@
         transform: translate3d(-@space-jumbo, 0, 0);
 
         .ui.icon.button {
+          width: @full;
+          margin: 0;
           padding: 1rem;
           box-shadow: none;
+          background-color: transparent;
           color: @light !important;
           font-size: @space-base + @space-tiny;
         }
@@ -132,7 +135,7 @@
           transform: translate3d(0,0,0);
         }
 
-        .ui.vertical.buttons {
+        .share-buttons {
           opacity: 1;
           transform: translate3d(0,0,0);
 
