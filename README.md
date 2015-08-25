@@ -21,6 +21,7 @@ A portfolio app for artists or photographers built with Meteor using Semantic-UI
 
 * Add tests
 * Setup build environment
+* Prev / Next for project/post details view
 
 ## How to use
 
