@@ -13,6 +13,17 @@
                 </div>
                 {{> album}}
             {{/with}}
+            <div class="ui centered icon buttons">
+                <a class="ui button">
+                    <i class="angle left icon"></i>
+                </a>
+                <a class="ui button" href="{{pathFor 'root'}}">
+                    <i class="grid layout icon"></i>
+                </a>
+                <a class="ui button">
+                    <i class="angle right icon"></i>
+                </a>
+            </div>
             {{> projects}}
         {{else}}
             {{> loading}}
