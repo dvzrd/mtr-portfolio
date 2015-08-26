@@ -49,6 +49,13 @@
     margin: 0;
     padding: 0;
 
+    @media (max-width: @desktop-width) {
+
+      .ui.projects.module {
+        display: none;
+      }
+    }
+
     .ui.left.rail {
       position: relative;
       top: 0;
@@ -85,10 +92,14 @@
       }
     }
 
-    @media (max-width: @desktop-width) {
+    .ui.basic.buttons {
+      display: block;
+      margin: @space-large 0;
+      border: 0;
+      text-align: center;
 
-      .ui.projects.module {
-        display: none;
+      .ui.button {
+        border: 0;
       }
     }
   }
