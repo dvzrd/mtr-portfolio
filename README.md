@@ -21,9 +21,9 @@ A portfolio app for artists or photographers built with Meteor using Semantic-UI
 
 * Add tests
 * Setup build environment
-* Create next / previous project/post buttons in detail views
-* Add scroll lazy loading for albums in project details
-* Global style updates for different device widths
+* Prev / Next for project/post view
+* lazy load more items in album when scrolling (project view)
+* Style fixes for different device widths
 
 ## How to use
 
