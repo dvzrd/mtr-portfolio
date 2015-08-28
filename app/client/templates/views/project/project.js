@@ -24,11 +24,10 @@ Template.project.events({
 
         for(var i = 0; i < projects.length; ++i) {
             if (projects[i]._id === projectId) {
-                var current = projects[i];
+                var current = projects[i],
+                    index = projects.indexOf(current);
 
-                var index = projects.indexOf(current);
                 index--;
-
                 var prevProjectId = projects[index]._id;
                 FlowRouter.go('/work/' + prevProjectId);
             } else {
@@ -42,11 +41,10 @@ Template.project.events({
 
         for(var i = 0; i < projects.length; ++i) {
             if (projects[i]._id === projectId) {
-                var current = projects[i];
+                var current = projects[i],
+                    index = projects.indexOf(current);
 
-                var index = projects.indexOf(current);
                 index++;
-
                 var nextProjectId = projects[index]._id;
                 FlowRouter.go('/work/' + nextProjectId);
             } else {
