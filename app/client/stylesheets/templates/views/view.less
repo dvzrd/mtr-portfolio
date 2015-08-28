@@ -40,6 +40,17 @@
     align-items: center;
   }
 
+  .ui.basic.icon.buttons {
+    display: block;
+    margin: @space-large 0;
+    border: 0;
+    text-align: center;
+
+    .ui.button {
+      border: 0;
+    }
+  }
+
   &.root {
     margin: 0;
     padding: 0;
@@ -52,6 +63,13 @@
     @media (max-width: @desktop-width) {
 
       .ui.projects.module {
+        display: none;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+
+      .ui.basic.icon.buttons {
         display: none;
       }
     }
@@ -89,21 +107,6 @@
         &.offset {
           margin-top: @space-giant;
         }
-      }
-    }
-
-    .ui.basic.buttons {
-      display: block;
-      margin: @space-large 0;
-      border: 0;
-      text-align: center;
-
-      @media (min-width: @desktop-width) {
-        display: none;
-      }
-
-      .ui.button {
-        border: 0;
       }
     }
   }

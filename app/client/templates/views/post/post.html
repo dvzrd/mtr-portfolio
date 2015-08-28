@@ -12,6 +12,17 @@
                     {{{content}}}
                 </div>
             {{/with}}
+            <div class="ui massive basic icon buttons">
+                <a class="ui prev button">
+                    <i class="chevron left icon"></i>
+                </a>
+                <a class="ui button" href="{{pathFor 'blog'}}">
+                    <i class="grid layout icon"></i>
+                </a>
+                <a class="ui next button">
+                    <i class="chevron right icon"></i>
+                </a>
+            </div>
             {{> MailChimpListSubscribe}}
             {{> disqus}}
         {{else}}
