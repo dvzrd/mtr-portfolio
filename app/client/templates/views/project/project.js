@@ -28,8 +28,13 @@ Template.project.events({
                     index = projects.indexOf(current);
 
                 index--;
-                var prevProjectId = projects[index]._id;
-                FlowRouter.go('/work/' + prevProjectId);
+
+                if (index === -1) {
+                    e.preventDefault();
+                } else {
+                    var prevProjectId = projects[index]._id;
+                    FlowRouter.go('/work/' + prevProjectId);
+                }
             } else {
                 e.preventDefault();
             }
@@ -45,8 +50,14 @@ Template.project.events({
                     index = projects.indexOf(current);
 
                 index++;
-                var nextProjectId = projects[index]._id;
-                FlowRouter.go('/work/' + nextProjectId);
+
+
+                if (index === projects.length) {
+                    e.preventDefault();
+                } else {
+                    var nextProjectId = projects[index]._id;
+                    FlowRouter.go('/work/' + nextProjectId);
+                }
             } else {
                 e.preventDefault();
             }
