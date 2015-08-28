@@ -4,8 +4,6 @@ Template.project.onCreated(function () {
         var projectId = FlowRouter.getParam('projectId');
         self.subscribe('project', projectId);
         self.subscribe('projects');
-        //self.subscribe('projectPrev', projectId);
-        //self.subscribe('projectNext', projectId);
     });
 
     $('.ui.sticky').sticky();
