@@ -23,18 +23,35 @@ Template.project.events({
             projects = Projects.find().fetch();
 
         for(var i = 0; i < projects.length; ++i) {
-            //console.log(projects[i]._id);
             if (projects[i]._id === projectId) {
-                console.log(projects[i]._id);
-                console.log(projects.indexOf(projects[i]));
+                var current = projects[i];
+
+                var index = projects.indexOf(current);
+                index--;
+
+                var prevProjectId = projects[index]._id;
+                FlowRouter.go('/work/' + prevProjectId);
             } else {
                 e.preventDefault();
             }
         }
-
-        //FlowRouter.path('/work/' + (prevProject));
     },
-    'click .ui.next.button': function() {
-        FlowRouter.path('/work/:id', {_id: this.id + 1});
+    'click .ui.next.button': function(e) {
+        var projectId = FlowRouter.getParam('projectId'),
+            projects = Projects.find().fetch();
+
+        for(var i = 0; i < projects.length; ++i) {
+            if (projects[i]._id === projectId) {
+                var current = projects[i];
+
+                var index = projects.indexOf(current);
+                index++;
+
+                var nextProjectId = projects[index]._id;
+                FlowRouter.go('/work/' + nextProjectId);
+            } else {
+                e.preventDefault();
+            }
+        }
     }
 });
