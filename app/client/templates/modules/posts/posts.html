@@ -1,25 +1,21 @@
 <template name="posts">
     {{#if Template.subscriptionsReady}}
-        <div class="ui stackable doubling three column posts module grid">
+        <div class="ui divided link posts items">
             {{#each posts}}
-                <div class="column">
-                    <a class="ui fluid card" href="{{pathFor '/blog/:id' id=_id}}">
-                        <div class="content">
-                            <h2 class="header">{{title}}</h2>
+                <a class="post item" href="{{pathFor '/blog/:id' id=_id}}">
+                    <div class="ui image">
+                        <img src="{{thumb}}">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">{{title}}</h2>
+                        <span class="meta">
+                            posted {{formatDate createdAt}}
+                        </span>
+                        <div class="description">
+                            <p>{{description}}</p>
                         </div>
-                        <div class="image">
-                            <img class="fluid image" src="{{thumb}}"/>
-                        </div>
-                        <div class="content">
-                            <div class="description">
-                                {{description}}
-                            </div>
-                        </div>
-                        <div class="extra content">
-                            <div class="meta">posted {{formatDate createdAt}}</div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             {{/each}}
         </div>
     {{else}}
