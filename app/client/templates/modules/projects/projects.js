@@ -7,6 +7,6 @@ Template.projects.onCreated(function () {
 
 Template.projects.helpers({
     projects: function () {
-        return Projects.find({}, {limit: 20, sort: {createdAt: -1}});
+        return Projects.find({}, {sort: {createdAt: -1}});
     }
 });

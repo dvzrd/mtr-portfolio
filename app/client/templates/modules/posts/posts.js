@@ -7,6 +7,6 @@ Template.posts.onCreated(function() {
 
 Template.posts.helpers({
     posts: function () {
-        return Posts.find({}, {limit: 10, sort: {createdAt: -1}});
+        return Posts.find({}, {sort: {createdAt: -1}});
     }
 });
