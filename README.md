@@ -60,6 +60,10 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
 * Accounts
   * [accounts-password](https://github.com/meteor/meteor/tree/devel/packages/accounts-password)
   * [useraccounts:semantic-ui](https://github.com/meteor-useraccounts/semantic-ui/)
+* [Security]
+  * [audit-argument-checks](http://github.com/meteor/meteor/tree/devel/packages/audit-argument-checks)
+  * [browser-policy](http://github.com/meteor/meteor/tree/devel/packages/browser-policy)
+  * [matteodem:easy-security](https://github.com/matteodem/meteor-easy-security/)
 * CMS
   * [orionjs:core](https://github.com/orionjs/orion)
   * [orionjs:froala](https://github.com/orionjs/orion)

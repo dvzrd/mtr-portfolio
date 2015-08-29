@@ -7,6 +7,7 @@ aldeed:tabular@1.2.0
 aldeed:template-extension@3.4.3
 anti:i18n@0.4.3
 arillo:flow-router-helpers@0.4.5
+audit-argument-checks@1.0.3
 autoupdate@1.2.1
 babrahams:editable-json@0.4.3
 base64@1.0.3
@@ -14,6 +15,10 @@ binary-heap@1.0.3
 blaze@2.1.2
 blaze-tools@1.0.3
 boilerplate-generator@1.0.3
+browser-policy@1.0.4
+browser-policy-common@1.0.3
+browser-policy-content@1.0.4
+browser-policy-framing@1.0.4
 callback-hook@1.0.3
 check@1.0.5
 chuangbo:cookie@1.1.0
@@ -49,6 +54,7 @@ livedata@1.0.13
 localstorage@1.0.3
 logging@1.0.7
 matb33:collection-hooks@0.7.14
+matteodem:easy-security@0.1.4
 meteor@1.1.6
 meteor-platform@1.2.2
 meteorhacks:async@1.0.0
