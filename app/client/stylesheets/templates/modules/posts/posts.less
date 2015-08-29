@@ -2,16 +2,37 @@
 
 // posts styles
 
-.posts.module {
-  margin-top: @space-tiny;
+.ui.posts.module {
+  margin-top: @space-base !important;
 
-  .ui.fluid.card {
-    border-radius: 0;
-    text-decoration: none;
+  .post.item {
+
+    .content {
+      text-align: center;
+      
+      @media (min-width: @tablet-width) {
+        text-align: left;
+      }
+
+      .title {
+        margin: 0;
+      }
+
+      .description {
+        margin-top: @space-base + @space-tiny;
+      }
+    }
 
     &:hover,
     &:focus {
-      background-color: @neutral-color;
+      text-decoration: none;
+
+      .content {
+
+        .title {
+          color: @link-color;
+        }
+      }
     }
   }
 }

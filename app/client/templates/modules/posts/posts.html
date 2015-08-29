@@ -1,16 +1,12 @@
 <template name="posts">
     {{#if Template.subscriptionsReady}}
-        <div class="ui divided link posts items">
+        <div class="ui divided link posts items module">
             {{#each posts}}
                 <a class="post item" href="{{pathFor '/blog/:id' id=_id}}">
-                    <div class="ui image">
-                        <img src="{{thumb}}">
-                    </div>
+                    <img class="ui image" src="{{thumb}}">
                     <div class="content">
                         <h2 class="title">{{title}}</h2>
-                        <span class="meta">
-                            posted {{formatDate createdAt}}
-                        </span>
+                        <p class="meta">posted {{formatDate createdAt}}</p>
                         <div class="description">
                             <p>{{description}}</p>
                         </div>
