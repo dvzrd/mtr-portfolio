@@ -83,6 +83,7 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [obvio171:disqus](https://github.com/obvio171/meteor-disqus)
   * [joshowens:shareit](https://github.com/meteorclub/shareit)
 * Development
+  * [check](http://github.com/meteor/meteor/tree/devel/packages/check)
   * [flemay:less-autoprefixer](http://github.com/flemay/less-autoprefixer)
   * [momentjs:moment](http://github.com/moment/moment/)
   * [msavin:mongol](http://github.com/msavin/Mongol)
