@@ -5,7 +5,6 @@
 
 meteor-platform
 
-dburles:collection-helpers
 fastclick
 natestrauser:animate-css
 flemay:less-autoprefixer
