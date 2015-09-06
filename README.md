@@ -83,7 +83,6 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [natestrauser:animate-css](http://github.com/nate-strauser/meteor-animate-css)
   * [waitingkuo:headroomjs](https://github.com/waitingkuo/meteor-headroomjs)
   * [miro:mailchimp](https://github.com/MiroHibler/meteor-mailchimp)
-  * [obvio171:disqus](https://github.com/obvio171/meteor-disqus)
   * [joshowens:shareit](https://github.com/meteorclub/shareit)
 * Development
   * [check](http://github.com/meteor/meteor/tree/devel/packages/check)

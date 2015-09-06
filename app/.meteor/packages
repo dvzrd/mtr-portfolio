@@ -29,7 +29,6 @@ meteorhacks:npm
 
 npm-container
 miro:mailchimp
-obvio171:disqus
 joshowens:shareit
 check
 audit-argument-checks

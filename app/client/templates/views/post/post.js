@@ -12,6 +12,10 @@ Template.post.helpers({
         var postId = FlowRouter.getParam('postId');
         var post = Posts.findOne({_id: postId}) || {};
         return post;
+    },
+    disqusPath: function() {
+        var path = 'http://localhost:3000/blog/' + this._id;
+        return path;
     }
 });
 
