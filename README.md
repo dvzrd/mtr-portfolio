@@ -75,6 +75,8 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
 * SEO
   * [spiderable](http://github.com/meteor/meteor/tree/devel/packages/spiderable)
   * [tomwasd:flow-router-seo](https://github.com/tomwasd/flow-router-seo)
+* Analytics
+  * [datariot:ganalytics](https://github.com/datariot/meteor-ganalytics)
 * UI and UX
   * [fastclick](http://github.com/meteor/meteor/tree/devel/packages/fastclick)
   * [semantic:ui-css](https://github.com/Semantic-Org/Semantic-UI-CSS)
