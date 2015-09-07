@@ -6,7 +6,7 @@ Template.project.onCreated(function () {
         self.subscribe('project', projectId, {onReady: function() {
             var project = Projects.findOne(projectId);
             SEO.set({
-                title: project.title,
+                title: 'Damir.Gallery | ' + project.title,
                 description: project.description,
                 meta: {
                     'property="og:image"': project.thumb,

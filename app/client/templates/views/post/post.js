@@ -6,7 +6,7 @@ Template.post.onCreated(function () {
         self.subscribe('post', postId, {onReady: function() {
             var post = Posts.findOne(postId);
             SEO.set({
-                title: post.title,
+                title: 'Damir.Gallery | ' + post.title,
                 description: post.description,
                 meta: {
                     'property="og:image"': post.thumb,
