@@ -3,9 +3,10 @@
 // album styles
 
 .album.module {
-  margin: @space-large @space-base @space-giant;
+  margin: 0 @space-base @space-giant;
 
   @media (min-width: @desktop-width) {
+    margin-top: @space-large;
     margin-left: @quarter + 5%;
   }
 
@@ -40,6 +41,45 @@
     margin-bottom: @space-base;
     cursor: pointer;
     background-color: @secondary-color;
+
+    @media (min-width: @tablet-width) {
+
+      &:hover,
+      &:focus {
+
+        .image {
+          opacity: 0.75;
+        }
+
+        .info {
+          box-shadow: inset 0 0 0 @space-base @secondary-color;
+
+          &:before {
+            transform: translate3d(0,0,0);
+          }
+
+          .ui.header {
+            opacity: 1;
+            transform: translate3d(0,0,0);
+          }
+
+          .share-buttons {
+            opacity: 1;
+            transform: translate3d(0,0,0);
+
+            .ui.icon.button {
+              border-radius: 0;
+
+              &:hover,
+              &:focus {
+                background-color: @primary-color !important;
+                color: @secondary-color !important;
+              }
+            }
+          }
+        }
+      }
+    }
 
     @media (min-width: @desktop-width) {
       margin-bottom: @space-large;
@@ -86,12 +126,20 @@
         top: 0;
         left: 0;
         margin: 0;
-        padding: @space-base @space-base + @space-mini;
+        padding: @space-base + @space-mini;
         width: @full;
         color: @primary-color;
         opacity: 0;
         transition: all @faster;
         transform: translate3d(@full,0,0);
+
+        @media (min-width: @large-desktop-width) {
+          padding: @space-base + @space-atomic @space-base + @space-mini;
+        }
+
+        @media (min-width: @huge-desktop-width) {
+          padding: @space-base @space-base + @space-mini;
+        }
       }
 
       .share-buttons {
@@ -112,42 +160,6 @@
           background-color: transparent;
           color: @light !important;
           font-size: @space-base + @space-tiny;
-        }
-      }
-    }
-
-    &:hover,
-    &:focus {
-
-      .image {
-        opacity: 0.75;
-      }
-
-      .info {
-        box-shadow: inset 0 0 0 @space-base @secondary-color;
-
-        &:before {
-          transform: translate3d(0,0,0);
-        }
-
-        .ui.header {
-          opacity: 1;
-          transform: translate3d(0,0,0);
-        }
-
-        .share-buttons {
-          opacity: 1;
-          transform: translate3d(0,0,0);
-
-          .ui.icon.button {
-            border-radius: 0;
-
-            &:hover,
-            &:focus {
-              background-color: @primary-color !important;
-              color: @secondary-color !important;
-            }
-          }
         }
       }
     }
