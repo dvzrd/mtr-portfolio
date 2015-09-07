@@ -86,22 +86,30 @@
 
       @media (min-width: @desktop-width) {
         position: absolute;
-        width: @quarter + 5%;
+        width: @quarter + 10%;
       }
 
       .ui.fixed.sticky {
         position: relative;
         margin: @space-large @space-base;
-        padding: @space-base;
-        border: @space-micro solid @primary-color;
 
         @media (min-width: @desktop-width) {
           position: fixed;
-          width: @quarter;
+          width: @quarter + 5%;
         }
 
         .ui.header {
-          margin: 0 0 @space-base;
+          margin: 0 0 @space-tiny;
+          padding: @space-tiny 0;
+          border-bottom: @space-micro solid @header-color;
+        }
+
+        .description {
+          text-align: center;
+
+          @media (min-width: @tablet-width) {
+            text-align: left;
+          }
         }
 
         &.offset {
@@ -202,12 +210,12 @@
         color: @header-color;
 
         .icon {
-          transform: scale3d(1, 1, 1);
           transition: all @fast;
         }
 
         .content {
-          padding: 0;
+          padding: @space-base 0 0;
+          border-top: @space-micro solid @link-color;
           color: @link-color;
           font-size: @font-size-small;
           transition: all @fast;
@@ -217,9 +225,10 @@
           }
 
           .sub.header {
+            margin-top: @space-base;
+            border-top: @space-micro solid @link-color;
             font-size: @three-quarters;
             line-height: @line-height-giant;
-            transform: scale(1);
             transition: all @fast;
           }
         }
@@ -232,17 +241,14 @@
         .ui.icon.header {
           color: @link-color;
 
-          .icon {
-            transform: scale3d(1.25, 1.25, 1.25);
-          }
-
           .content {
+            border-color: @header-color;
             color: @header-color;
 
             .sub.header {
-              color: @offset-color;
-              letter-spacing: @space-tiny;
-              transform: scale(1.1);
+              border-color: @header-color;
+              background-color: @header-color;
+              color: @primary-color;
             }
           }
         }
