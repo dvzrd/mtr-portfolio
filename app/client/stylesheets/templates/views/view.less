@@ -201,6 +201,11 @@
         text-align: center;
         color: @header-color;
 
+        .icon {
+          transform: scale3d(1, 1, 1);
+          transition: all @fast;
+        }
+
         .content {
           padding: 0;
           color: @link-color;
@@ -226,6 +231,10 @@
 
         .ui.icon.header {
           color: @link-color;
+
+          .icon {
+            transform: scale3d(1.25, 1.25, 1.25);
+          }
 
           .content {
             color: @header-color;
