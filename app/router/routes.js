@@ -4,6 +4,7 @@ FlowRouter.route('/', {
         BlazeLayout.render('layout', {
             content: 'root'
         });
+        GAnalytics.pageview();
     }
 });
 
@@ -13,6 +14,8 @@ FlowRouter.route('/work/:projectId', {
         BlazeLayout.render('layout', {
             content: 'project'
         });
+        GAnalytics.pageview();
+        GAnalytics.event('work','project view');
     }
 });
 
@@ -22,6 +25,7 @@ FlowRouter.route('/about', {
         BlazeLayout.render('layout', {
             content: 'about'
         });
+        GAnalytics.pageview();
     }
 });
 
@@ -31,6 +35,7 @@ FlowRouter.route('/blog', {
         BlazeLayout.render('layout', {
             content: 'blog'
         });
+        GAnalytics.pageview();
     }
 });
 
@@ -40,6 +45,8 @@ FlowRouter.route('/blog/:postId', {
         BlazeLayout.render('layout', {
             content: 'post'
         });
+        GAnalytics.pageview();
+        GAnalytics.event('blog','post view');
     }
 });
 
@@ -49,5 +56,6 @@ FlowRouter.route('/contact', {
         BlazeLayout.render('layout', {
             content: 'contact'
         });
+        GAnalytics.pageview();
     }
 });
