@@ -2,16 +2,17 @@
     <div class="animated fadeIn post view">
         {{#if Template.subscriptionsReady}}
             {{#with post}}
-                <h2 class="ui header">
+                <h1 class="ui header">
                     {{title}}
                     <small class="sub header">
                         posted {{formatDate createdAt}}
                     </small>
-                </h2>
+                </h1>
                 <div class="post content">
                     {{{content}}}
                 </div>
             {{/with}}
+            {{> author}}
             {{> MailChimpListSubscribe}}
             <div class="ui massive basic icon buttons">
                 <a class="ui prev button">
