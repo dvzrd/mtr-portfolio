@@ -2,8 +2,18 @@ Template.project.onCreated(function () {
     var self = this;
     self.autorun(function () {
         var projectId = FlowRouter.getParam('projectId');
-        self.subscribe('project', projectId);
         self.subscribe('projects');
+        self.subscribe('project', projectId, {onReady: function() {
+            var project = Projects.findOne(projectId);
+            SEO.set({
+                title: project.title,
+                description: project.description,
+                meta: {
+                    'property="og:image"': project.thumb,
+                    'name="twitter:image"': project.thumb
+                }
+            });
+        }});
     });
 
     $('.ui.sticky').sticky();

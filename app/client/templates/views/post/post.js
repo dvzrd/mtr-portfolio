@@ -2,8 +2,18 @@ Template.post.onCreated(function () {
     var self = this;
     self.autorun(function () {
         var postId = FlowRouter.getParam('postId');
-        self.subscribe('post', postId);
         self.subscribe('posts');
+        self.subscribe('post', postId, {onReady: function() {
+            var post = Posts.findOne(postId);
+            SEO.set({
+                title: post.title,
+                description: post.description,
+                meta: {
+                    'property="og:image"': post.thumb,
+                    'name="twitter:image"': post.thumb
+                }
+            });
+        }});
     });
 });
 
@@ -12,10 +22,6 @@ Template.post.helpers({
         var postId = FlowRouter.getParam('postId');
         var post = Posts.findOne({_id: postId}) || {};
         return post;
-    },
-    disqusPath: function() {
-        var path = 'http://localhost:3000/blog/' + this._id;
-        return path;
     }
 });
 

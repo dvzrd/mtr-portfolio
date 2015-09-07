@@ -1,12 +1,12 @@
 SEO = new FlowRouterSEO();
 
 SEO.setDefaults({
-  title: 'Meteor Portfolio | A Portfolio App for Artists and Photographers',
-  description: 'A portfolio app for artists or photographers built with Meteor using Semantic-UI and Orion CMS',
+  title: 'Damir.Gallery | A Science Fiction and Fantasy Art Gallery',
+  description: 'Damir Vazgird is an NYC based Software Engineer and Designer that loves drawing Science Fiction and Fantasy. This is an Online Gallery showing some of his work.',
   meta: {
     'property="og:type"': 'website',
-    'property="og:site_name"': 'Meteor Portfolio',
-    'name="twitter:card"': 'summary',
-    'name="twitter:site"': '@TwitterUsername'
+    'property="og:site_name"': 'Damir.Gallery',
+    'name="twitter:card"': 'Damir Vazgird\'s Science Fiction and Fantasy Art Gallery',
+    'name="twitter:site"': '@dvazgird'
   }
 });
