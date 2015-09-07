@@ -7,6 +7,10 @@
 
   .post.item {
 
+    .ui.image {
+      transition: all @fast;
+    }
+
     .content {
       text-align: center;
       
@@ -26,6 +30,10 @@
     &:hover,
     &:focus {
       text-decoration: none;
+
+      .ui.image {
+        opacity: 0.5;
+      }
 
       .content {
 
