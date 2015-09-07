@@ -51,11 +51,13 @@ html {
       color: @link-color;
       font-size: inherit;
       text-decoration: none;
+      transition: all @fast;
 
       &:hover,
       &:focus {
         color: darken(@link-color, @sixteenth);
         text-decoration: underline;
+        transition: all @fast;
       }
 
       &:visited {
@@ -84,6 +86,7 @@ html {
       font-weight: 300;
       letter-spacing: @space-micro;
       text-transform: uppercase;
+      transition: all @fast;
 
       &.ui.header {
         font-family: @font-family-header;
@@ -91,6 +94,7 @@ html {
         line-height: @line-height-base;
         letter-spacing: @space-mini;
         text-transform: uppercase;
+        transition: all @fast;
       }
 
       small {
