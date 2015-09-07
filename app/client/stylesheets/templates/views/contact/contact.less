@@ -1,0 +1,60 @@
+@import '../../../variables';
+
+// contact view styles
+
+.view.contact {
+
+  .email {
+
+    .ui.icon.header {
+      display: block;
+      margin: 0 auto @space-jumbo;
+      text-align: center;
+      color: @header-color;
+
+      .icon {
+        transition: all @fast;
+      }
+
+      .content {
+        padding: @space-base 0 0;
+        border-top: @space-micro solid @link-color;
+        color: @link-color;
+        font-size: @font-size-small;
+        transition: all @fast;
+
+        @media (min-width: @phone-width) {
+          font-size: @font-size-base;
+        }
+
+        .sub.header {
+          margin-top: @space-base;
+          border-top: @space-micro solid @link-color;
+          font-size: @three-quarters;
+          line-height: @line-height-giant;
+          transition: all @fast;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+      .ui.icon.header {
+        color: @link-color;
+
+        .content {
+          border-color: @header-color;
+          color: @header-color;
+
+          .sub.header {
+            border-color: @header-color;
+            background-color: @header-color;
+            color: @primary-color;
+          }
+        }
+      }
+    }
+  }
+}

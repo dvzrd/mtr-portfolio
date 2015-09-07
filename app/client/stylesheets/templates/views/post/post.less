@@ -1,0 +1,65 @@
+@import '../../../variables';
+
+// post view styles
+
+.view.post {
+  margin: 0;
+  padding: 0;
+
+  .ui.header {
+    padding-left: @space-base;
+    padding-right: @space-base;
+
+    @media (min-width: @desktop-width) {
+      margin-left: @space-large;
+      margin-right: @space-large;
+    }
+
+    @media (min-width: @large-desktop-width) {
+      margin-left: @sixteenth;
+      margin-right: @sixteenth;
+    }
+
+    @media (min-width: @large-desktop-width) {
+      margin-left: @eighth;
+      margin-right: @eighth;
+    }
+
+    @media (min-width: @huge-desktop-width) {
+      margin-left: @sixth;
+      margin-right: @sixth;
+    }
+
+    .sub.header {
+      display: block;
+      margin-top: @space-tiny;
+      padding-top: @space-tiny;
+      border-top: @space-micro solid @header-color;
+    }
+  }
+
+  .post.content {
+    margin: 0;
+    padding: @space-base;
+
+    @media (min-width: @desktop-width) {
+      margin-left: @space-large;
+      margin-right: @space-large;
+    }
+
+    @media (min-width: @large-desktop-width) {
+      margin-left: @sixteenth;
+      margin-right: @sixteenth;
+    }
+
+    @media (min-width: @large-desktop-width) {
+      margin-left: @eighth;
+      margin-right: @eighth;
+    }
+
+    @media (min-width: @huge-desktop-width) {
+      margin-left: @sixth;
+      margin-right: @sixth;
+    }
+  }
+}

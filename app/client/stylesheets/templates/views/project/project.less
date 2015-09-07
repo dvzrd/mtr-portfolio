@@ -1,0 +1,66 @@
+@import '../../../variables';
+
+// project view styles
+
+.view.project {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: @desktop-width) {
+
+    .ui.projects.module {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+
+    .ui.basic.icon.buttons {
+      display: none;
+    }
+  }
+
+  .ui.left.rail {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: @full;
+    margin: 0;
+    padding: 0;
+    background-color: @background-color;
+    z-index: 1;
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      width: @quarter + 10%;
+    }
+
+    .ui.fixed.sticky {
+      position: relative;
+      margin: @space-large @space-base;
+
+      @media (min-width: @desktop-width) {
+        position: fixed;
+        width: @quarter + 5%;
+      }
+
+      .ui.header {
+        margin: 0 0 @space-tiny;
+        padding: @space-tiny 0;
+        border-bottom: @space-micro solid @header-color;
+      }
+
+      .description {
+        text-align: center;
+
+        @media (min-width: @tablet-width) {
+          text-align: left;
+        }
+      }
+
+      &.offset {
+        margin-top: @space-giant;
+      }
+    }
+  }
+}
