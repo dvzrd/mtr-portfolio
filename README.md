@@ -62,7 +62,6 @@ There are other ways to deploy to your server besides Meteor Up. Here is a [step
   * [useraccounts:semantic-ui](https://github.com/meteor-useraccounts/semantic-ui/)
 * Collections
   * [tmeasday:publish-counts](https://github.com/percolatestudio/publish-counts/)
-  * [reywood:publish-composite](https://github.com/englue/meteor-publish-composite)
 * Security
   * [audit-argument-checks](http://github.com/meteor/meteor/tree/devel/packages/audit-argument-checks)
   * [matteodem:easy-security](https://github.com/matteodem/meteor-easy-security/)
