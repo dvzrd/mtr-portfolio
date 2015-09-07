@@ -3,9 +3,10 @@
 // mailchimp styles
 
 .mailchimp.module {
-  margin: @space-huge auto;
-  padding: @space-large;
-  background-color: @neutral-color;
+  margin: @space-huge auto 0;
+  padding: @space-jumbo @space-large;
+  background-color: @secondary-color;
+  color: @primary-color;
 
   @media (min-width: @phone-width) and (max-width: @tablet-width) {
     padding-left: @sixth;
@@ -31,6 +32,22 @@
     .mailchimp-email {
       border: 0;
       box-shadow: inset 0 0 @space-mini 0 @gray-lighter;
+    }
+
+    .mailchimp-subscribe {
+      cursor: pointer;
+      
+      &:hover,
+      &:focus {
+        background-color: darken(@primary-color, @sixteenth);
+        color: @secondary-color;
+      }
+
+      &:disabled {
+        color: @gray-light;
+        opacity: 1 !important;
+        cursor: not-allowed;
+      }
     }
   }
 }
