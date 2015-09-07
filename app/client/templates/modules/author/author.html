@@ -1,12 +1,20 @@
 <template name="author">
     <div class="author module">
         <h2 class="ui header">
-            <img src="/images/about/tree.png" class="ui circular image">
-            <a class="path" href="http://damirvazgird.com" target="_blank">Damir Vazgird</a>
+            <img src="{{ dict 'author.image' '/images/about/about.png' }}" class="ui circular image">
+            <a class="path" href="{{ dict 'author.website' 'http://damirvazgird.com' }}" target="_blank">
+                {{ dict 'author.name' 'Damir Vazgird' }}
+            </a>
             <div class="sub header">
-                <a class="path" href="http://damir.io" target="_blank">software engineer</a>
-                <span class="break">become</span>
-                <a class="path" href="{{pathFor 'root'}}">graphic novelist</a>
+                <a class="path" href="{{ dict 'author.urlPrimary' 'http://damir.io' }}" target="_blank">
+                    {{ dict 'author.messagePrimary' 'software engineer' }}
+                </a>
+                <span class="break">
+                    {{ dict 'author.messageBreak' 'become' }}
+                </span>
+                <a class="path" href="{{ dict 'author.urlSecondary' '/' }}">
+                    {{ dict 'author.messageSecondary' 'graphic novelist' }}
+                </a>
             </div>
         </h2>
     </div>
