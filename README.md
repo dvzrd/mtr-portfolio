@@ -2,9 +2,9 @@
 
 A portfolio app for artists or photographers built with Meteor using Semantic-UI and Orion CMS
 
-[DEMO](http://artfolio.meteor.com)
+[Currently in production](http://damir.gallery)
 
-> You can use username: admin // password: admin to login to /admin
+> If you have questions, feel free to contact me.
 
 * [Roadmap](#roadmap)
 * [How to use](#how-to-use)
@@ -24,7 +24,8 @@ A portfolio app for artists or photographers built with Meteor using Semantic-UI
 * ~~Security~~
 * ~~Prev / Next for project/post view~~
 * lazy load more items in album when scrolling (project view)
-* Style fixes for different device widths
+* pagination scroll for posts *
+* ~~Style fixes for different device widths~~
 
 ## How to use
 
