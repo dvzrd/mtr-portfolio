@@ -2,8 +2,6 @@
 
 A portfolio app for artists or photographers built with Meteor using Semantic-UI and Orion CMS
 
-[Currently in production](http://damir.gallery)
-
 > If you have questions, feel free to contact me.
 
 * [Roadmap](#roadmap)
